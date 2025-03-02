@@ -875,10 +875,24 @@ background-color: transparent;
     text-decoration: none;
     font-size: 16px;
     padding: 12px 25px;
-    background: #BE1D28;
-    border: 3px solid #BE1D28;
+    background: #333;
+    border: 3px solid #333;
     border-radius: 7px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     min-width: 110px;
+    margin-left:10px ;
     }
+
+    
+#popup p {
+    font-size: 18px;
+  }
+  #popup p.hi {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  #popup {
+    padding: 30px;
+    border-radius: 10px;
+  }
