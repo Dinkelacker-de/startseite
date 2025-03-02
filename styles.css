@@ -1,7 +1,7 @@
 header {
     display: flex;
-    margin-inline: 50px;
-    z-index: 5;
+    padding-inline: 50px;
+    z-index: 200;
 }
 
 nav {
@@ -12,47 +12,15 @@ nav {
 }
 
 .wrapper.hero {
-    background-color: blue;
+    background-color: #131373;
 }
 
 
-#popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    display: none;
-    z-index: 1000;
+.hero p, .hero h1 {
+    color: #fff;
 }
 
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    display: none;
-    z-index: 999;
-}
-
-#close-btn {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
+/*
 
 .parallax {
   perspective: 100px;
@@ -60,11 +28,9 @@ nav {
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
-  top: 120px;
-  left: 50%;
+  left: 0%;
   right: 0;
   bottom: 0;
-  margin-left: -1500px;
 }
 
 .parallax__layer{
@@ -75,7 +41,7 @@ nav {
   left: 0;
   width:100%;
   
-  img{
+  img {
     display: block;
     position: absolute;
     bottom: 0;
@@ -83,50 +49,102 @@ nav {
   }
 }
 
-.parallax__cover{
-  background: #2D112B;
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 2000px;
-  z-index: 2;
+*/
+
+
+.parallax {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
 }
 
-$parallax__layers: 3;
-
-@for $i from 0 through $parallax__layers {
-  $x: ($parallax__layers - $i) / 2;
-  .parallax__layer__#{$i}{
-     transform: translateZ(-100 * $x#{px}) scale($x + 1);
-  }
+.parallax__layer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    will-change: transform;
 }
+
+.parallax__layer__3 {
+    z-index: 1;
+}
+
+.parallax__layer__2 {
+    z-index: 2;
+}
+
+.parallax__layer__1 {
+    z-index: 3;
+}
+.bg-1.parallax__layer.parallax__layer__1 {
+    z-index: 10;
+    max-height: 18vh;
+
+
+}
+.bg-3.parallax__layer.parallax__layer__3 {
+    z-index: 7;
+    max-height: 30vh;
+}
+
+.bg-2.parallax__layer.parallax__layer__2 {
+    z-index: 8;
+    max-height: 35vh;
+}
+
+
+.bg > span {
+    z-index:222;
+}
+
+
 
 header {
     position: fixed;
     width: 100%;
 }
+header.scrolled {
+    background-color: #504f4f70;
+}
+header.scrolled img {
+    max-height: 50px;
+}
+header .logo-wrapper {
+    padding-block: 10px;
+}
 
+header a.menu-item {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .hero .content {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 10%;
-    max-width: 600px;
+    max-width: 450px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 54px;
     margin-block: 0px;
+    font-family: "Sweet Sans Pro Regular", "sans-serif";
 }
-
+h2 {
+    font-size: 28px;
+    margin-top: 0px;
+}
 p {
-    font-size: 24px;
-    margin-block: 5px;
+    font-size: 16px;
+    margin-block: 0px;
+    font-family: "Sweet Sans Pro Regular", "sans-serif";
+    padding-bottom: 20px;
 }
-
-.wrapper.hero {
-    margin-bottom: 200px;
+a, h1, h2, h3, h4, h5, h6, span, input, textarea, div, label{
+    font-family: "Sweet Sans Pro Regular", "sans-serif";
 }
 
 img.moon {
@@ -135,30 +153,570 @@ img.moon {
 
 .track {
     display: flex;
+    gap:25px;
 }
 
 #kalender .inner-wrapper {
     display: flex;
     flex-wrap: wrap;
 }
+.hero h1 {
+    margin-bottom: 15px;
+}
 
-
+.hero p {padding-bottom: 5px;}
+.hero .content h3 {
+    margin-bottom: 0px;
+    color: #fff;
+    font-size:24px;
+}
 .beer {
     position: absolute;
     left: 60%;
-    top: 43%;
+    top: 20%;
     transform: rotate(25deg);
 }
 
 .wrapper.hero {
     height: 100vh;
+    position: relative;
 }
 
 img.moon {
     position: absolute;
     left: 40%;
+    max-width: 10%;
 }
 
 body {
     margin: 0px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+.img-text#box img {
+    width: 100%;
+}
+
+.wrapper.img-text-2 img {
+    width: 100%;
+}
+
+
+.wrapper.img-text {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+img.bg-element {
+    min-width: 100%;
+    height: auto;
+    position: absolute;
+    top: -180px;
+    overflow: hidden;
+    max-width: 100vw;
+    object-position: bottom;
+    object-fit: fill;
+    min-height: 220px;
+}
+
+.left.content {
+    width: 50%;
+}
+
+.right.content {
+    width: 50%;
+}
+.parallax-2 {
+    position: relative;
+}
+
+.wrapper.img-text .inner-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 100px;
+   
+}
+.wrapper.img-text-2 .inner-wrapper {
+    padding-top: 100px;
+   
+}
+.left.content > p, .left.content > h2, .right.content > p, .rigth.content > h2 {
+    max-width: 500px;
+}
+h2 {
+    z-index: 13;
+    position: relative;
+}
+
+.inner-wrapper {
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+
+
+.wrapper.img-text-2 .outer-wrapper {
+    background-color: #BE1D28;
+    margin-top: 200px;
+}
+
+
+#rohstoffe .inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-block: 100px;
+    column-gap: 100px;
+}
+
+#rohstoffe h2 {
+    width: 100%;
+}
+
+.one-third {
+    width: calc(33% - 75px);
+}
+
+
+.wrapper.banner {
+    background-color: #BE1D28;
+    padding-block: 25px;
+}
+
+.wrapper.banner .slide img {
+    max-height: 200px;
+}
+
+.akordeon {
+    max-width: 60%;
+    margin-inline: auto;
+}
+
+.wrapper.img-text .inner-wrapper {
+    gap: 75px;
+}
+
+.wrapper.img-text-2 .inner-wrapper h2 {
+    color: #fff;
+}
+
+
+.wrapper.img-text-2 .inner-wrapper p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+div#ig {
+    background-color: #292929;
+    padding-block: 75px;
+    overflow: hidden;
+}
+
+div#ig h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+div#ig .slide img {
+    max-height: 600px;
+}
+
+.slider.slider-ig {
+  
+    padding-block: 25px;
+}
+
+
+
+
+
+
+
+.button.cta {
+  
+    background: transparent;
+    margin-top: 20px;
+    display: flex;
+}
+
+.button.cta a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 25px;
+    background: #D6B54C;
+    border: 3px solid #D6B54C;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button.cta a:hover {
+    color: #D6B54C;
+    background-color: transparent;
+}
+
+
+
+
+
+
+.akordeon-tab {
+    margin: 10px 0;
+  }
+  
+  .akordeon-tab h5 {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .akordeon-tab p {
+    display: none;
+    padding: 10px;
+  }
+  
+  .akordeon-tab.active p {
+    display: block;
+  }
+  
+
+
+
+  .akkordeon-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.akkordeon-title .icon svg {
+    width: 20px;
+}
+
+.akordeon-tab h5 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.akordeon-tab.active p {
+    margin-left: 25px;
+}
+
+
+
+
+
+#kontakt img {
+    width: 100%;
+}
+
+#kontakt .inner-wrapper {
+    display: flex;
+    gap: 75px;
+}
+
+div#kontakt {
+    margin-block: 50px;
+}
+
+
+
+
+
+
+
+
+
+div#kalender {
+    height: 100vh;
+}
+
+#kalender svg {
+    max-width: 70px;
+}
+
+#kalender .inner-wrapper a {
+    display: flex;
+    position: relative;
+}
+
+#kalender .inner-wrapper p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: #fff;
+    font-size: 17px;
+}
+
+
+
+
+.bg-1.parallax__layer.parallax__layer__1 {
+    z-index: 10;
+}
+
+.bg-2.parallax__layer.parallax__layer__2 {
+    z-index: 8;
+}
+
+.bg-3.parallax__layer.parallax__layer__3 {
+    z-index: 7;
+}
+
+.beer {
+    z-index: 9;
+}
+
+
+
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.row-50 {
+    width: calc(50% - 12.5px);
+    display: flex;
+}
+.row {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+textarea#nachricht {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: red;
+    border: 1px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+
+form {
+    width: 100%;
+}
+
+textarea#nachricht {
+    padding: 10px;
+}
+
+
+label.screen-reader {
+    display: none;
+}
+
+#faq .inner-wrapper {
+    padding-block: 50px;
+}
+
+
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div#faq {
+    margin-block: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+.wrapper#kalender {
+    position: relative;
+    height: 90vh; /* Adjust this as needed */
+    overflow: hidden; /* Hide anything outside */
+  }
+  #kalender .inner-wrapper-a {
+    opacity: 1;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+  
+  #kalender .inner-wrapper-a > div {
+    position: absolute;
+    top: -200px; /* Start above the screen */
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transition: opacity 0.5s, top 1s ease-in-out, transform 0.5s ease, left 1s ease-in-out;
+  }
+  
+  @keyframes fallDown {
+    0% {
+      top: -200px;
+      left: var(--random-left);
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50% {
+      opacity: 0.5;
+      transform: rotateX(30deg);
+    }
+    100% {
+      top: var(--random-top);
+      left: var(--random-left);
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+  
+  #kalender .inner-wrapper-a > div.animate {
+    animation: fallDown 1s ease forwards;
+  }
+  #kalender  p {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 35%;
+}
+  .door p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .door svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .banner .inner-wrapper {
+    margin-inline: 0px;
+}
+
+
+
+.wrapper.ig {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.slider-ig {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-ig .track {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.slider-ig .slide {
+    min-width: 300px;
+}
+
+.slider-ig .slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+div#ig .slide img {
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+div#ig .slide img:hover {
+    filter: grayscale(0);
+}
+
+
+div#ig .slide {
+    position: relative;
+}
+
+div#ig .slide p {
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2222;
+}
+
+div#ig .slide .icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+.insta {
+    display: flex;
+    gap: 50px;
+}
+
+
+.heading {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.ig .heading h2 {
+    white-space: nowrap;
+    margin-bottom: 0px !important;
+    line-height: 1;
+}
+
+.ig .insta p {
+    color: #fff;
+}
+
+.ig-zahl p:first-child {
+    font-size:30px;
+    padding-bottom: 10px;
 }
