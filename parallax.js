@@ -16,27 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const target = document.querySelector(".parallax-2");
-    if (!target) return;
 
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom > 0;
-    }
-
-    function handleScroll() {
-        if (isInViewport(target)) {
-            let scrollPosition = window.scrollY;
-            requestAnimationFrame(() => {
-                let offset = scrollPosition * -0.3;
-                target.style.transform = `translateY(${offset}px)`;
-            });
-        }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-});
 
 
 
