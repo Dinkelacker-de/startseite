@@ -293,7 +293,7 @@ h2 {
 }
 
 .akordeon {
-    max-width: 60%;
+    max-width: 750px;
     margin-inline: auto;
 }
 
@@ -447,7 +447,9 @@ div#kontakt {
     border-radius: 10px;
     border-color: transparent;
   }
-
+  textarea{
+    min-height: 175px;
+  }
 
   footer .inner-wrapper {
     padding-block: 50px;
@@ -887,10 +889,13 @@ background-color: transparent;
     
 #popup p {
     font-size: 18px;
+    margin-bottom: 10px;
   }
   #popup p.hi {
     font-size: 34px;
     font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
   }
   #popup {
     padding: 30px;
