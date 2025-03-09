@@ -258,6 +258,9 @@ img.moon {
 .wrapper.hero {
     height: 100vh;
     position: relative;
+    background-image: url(/img/herp-bg-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
