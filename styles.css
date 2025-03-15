@@ -448,6 +448,8 @@ div#kalender {
 }
 .door {
     position: relative;
+
+
 }
 
 .door p {
@@ -481,73 +483,6 @@ div#kalender {
 
 
 
-.door.door-1::before {
-    height: 300px;
-}
-
-.door.door-2::before {
-    height: 200px;
-}
-
-.door.door-3::before {
-    height: 200px;
-}
-
-.door.door-8::before {
-    height: 600px;
-}
-
-.door.door-9::before {
-    height: 600px;
-}
-
-.door.door-10::before {
-    height: 800px;
-}
-
-.door.door-11::before {
-    height: 600px;
-}
-
-.door.door-12::before {
-    height: 800px;
-}
-
-.door.door-13::before {
-    height: 300px;
-}
-
-.door.door-14::before {
-    height: 300px;
-}
-
-.door.door-15::before {
-    height: 300px;
-}
-
-.door.door-18::before {
-    height: 800px;
-}
-
-.door.door-19::before {
-    height: 600px;
-}
-
-.door.door-20::before {
-    height: 600px;
-}
-
-.door.door-21::before {
-    height: 700px;
-}
-
-.door.door-22::before {
-    height: 800px;
-}
-
-.door.door-23::before {
-    height: 800px;
-}
 
 
 
@@ -613,7 +548,7 @@ div#kalender {
 
 .door::before {
     content: "";
-    height: 500px;
+    height: 1400px;
     width: 2px;
     background-color: #BAA64D;
     position: absolute;
@@ -633,7 +568,8 @@ div#kalender {
     width: auto; /* Größe anpassen */
     height: 100px; /* Höhe für jede Flasche anpassbar */
     opacity: 0;
-    transition: top 1s ease-out, opacity 1s ease-out; /* Weicher Fall-Effekt */
+    transition: top 2s ease-out, opacity 1s ease-in-out;
+
 }
 
 .popup-door p#popup-door-text {
