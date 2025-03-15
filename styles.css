@@ -1513,3 +1513,6 @@ h3 {
 
 
 
+.slider-ig .track, .slider-wm .track {
+    will-change: transform;
+}

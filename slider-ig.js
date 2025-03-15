@@ -9,34 +9,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let slideWidth = slider.scrollWidth / 3; // 1/3 der Gesamtbreite ist der Original-Track
     let currentPosition = 0;
-    let interval;
+    let animationFrame;
+    let isResetting = false; // Verhindert direktes Weiterscrollen nach Reset
 
     function moveSlider() {
+        if (isResetting) return; // Stoppe Bewegung kurzzeitig beim Reset
+
         currentPosition -= 1;
-        slider.style.transform = `translateX(${currentPosition}px)`;
-        slider.style.transition = "transform 0.02s linear";
+        slider.style.transform = `translate3d(${currentPosition}px, 0, 0)`;
 
-        // Sobald ein ganzer Original-Track durch ist, zurücksetzen
         if (Math.abs(currentPosition) >= slideWidth) {
-            slider.style.transition = "none"; // Sofortiger Reset
-            currentPosition = 0;
-            slider.style.transform = `translateX(${currentPosition}px)`;
-
-            requestAnimationFrame(() => {
-                slider.style.transition = "transform 0.02s linear";
-            });
+            isResetting = true; // Verhindert visuelles Springen
+            setTimeout(() => {
+                slider.style.transition = "none";
+                currentPosition = 0;
+                slider.style.transform = `translate3d(0, 0, 0)`;
+                isResetting = false; // Nach Reset wieder weiterlaufen
+            }, 16); // Kleiner Delay für flüssigen Übergang
         }
+
+        animationFrame = requestAnimationFrame(moveSlider);
     }
 
     function startSlider() {
-        if (!interval) {
-            interval = setInterval(moveSlider, 20);
+        if (!animationFrame) {
+            moveSlider();
         }
     }
 
     function stopSlider() {
-        clearInterval(interval);
-        interval = null;
+        cancelAnimationFrame(animationFrame);
+        animationFrame = null;
     }
 
     // **Preload-Bilder, um sicherzustellen, dass alles geladen ist**
