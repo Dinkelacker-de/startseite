@@ -311,8 +311,7 @@ img.moon {
 img.bg-element {
     min-width: 100%;
     height: auto;
-    position: absolute;
-    top: -280px;
+
     min-height: 220px;
     max-height: 600px;
     object-fit: cover;
@@ -363,7 +362,6 @@ img.bg-element {
 
 .wrapper.img-text-2 .outer-wrapper {
     background-color: #BE1D28;
-    margin-top: 200px;
 }
 
 .img-text img {
