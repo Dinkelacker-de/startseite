@@ -97,9 +97,12 @@ header {
 	align-items: center;
 	transition: all 0.3s ease-in-out;
     display: flex;
-    padding-inline: 50px;
     z-index: 200;
     max-width: 100vw;
+    z-index: 19999;
+}
+.logo-wrapper {
+    padding-left: 50px;
 }
 
 header.scrolled {
@@ -107,7 +110,9 @@ header.scrolled {
     background: #ffffff50;
     backdrop-filter: blur(3px);
 }
-
+.logo-wrapper {
+    padding-left: 50px;
+}
 nav {
     display: flex;
     gap: 20px;
@@ -965,12 +970,15 @@ div#ig .slide .icon {
 div#kontakt {
     background-color: #BE1D28;
 }
-
+#kontakt .inner-wrapper {
+    padding-top: 75px;
+}
 
 #kontakt .left.content img {
     max-height: 600px;
     object-fit: contain;
-    margin-block: 75px;
+
+    
   }
   
   #kontakt .inner-wrapper h2 {
@@ -1131,7 +1139,10 @@ label.screen-reader {
 
 
 /* POP UP  */
-
+#popup .button-wrapper {
+    display: flex;
+    gap: 10px;
+}
   #overlay {
     display: none;
     position: fixed;
@@ -1251,6 +1262,9 @@ background-color: transparent;
 
 
 @media screen and (max-width:990px) {
+    .logo-wrapper {
+        padding-left: 25px;
+    }
     .inner-wrapper {
         max-width: 90%;
         margin-inline: auto;
@@ -1294,9 +1308,7 @@ background-color: transparent;
     width: 100%;
 }
 
-div#kontakt {
-    padding-top: 50px;
-}
+
 
 #kontakt .left.content img {
     margin-block: 0px;
@@ -1310,4 +1322,139 @@ div#faq {
     padding-block: 75px;
 }
 
+#rohstoffe .inner-wrapper {
+    gap: 50px;
+    row-gap: 0;
+}
+
+.one-third {
+    width: calc(33% - 32px);
+}
+.top-wrapper {
+    max-width: 90%;
+}
+#rohstoffe .inner-wrapper > div {
+    margin-top: 0px;
+}
+#faq h2 {
+    margin-bottom: 20px;
+}
+
+}
+
+
+@media  screen and (max-width:767px) {
+    
+#rohstoffe .inner-wrapper > div {
+    margin-top: 0px;
+}
+
+#rohstoffe .inner-wrapper {
+    flex-direction: column;
+}
+
+.one-third {
+    width: 100%;
+}
+
+.rohstoffe img {
+    max-height: 250px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.insta {
+    gap: 20px;
+}
+
+div#faq {
+    margin-block: 0px;
+}
+
+#rohstoffe .inner-wrapper {
+    padding-block: 50px;
+}
+
+#rohstoffe h2 {
+    margin-bottom: 20px;
+}
+
+.wrapper.img-text .inner-wrapper {
+    padding-block: 50px;
+    gap:25px;
+}
+.button.cta {
+    margin-top: 20px;
+}
+
+#kontakt .inner-wrapper {
+    padding-top: 50px;
+}
+}
+
+
+
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.burger-menu .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #D6B54C;
+    margin: 5px 0;
+    display: block;
+    border-radius: 3px;
+}
+
+@media (max-width: 1100px) {
+    .burger-menu {
+        display: flex;
+        margin-right:20px ;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+
+       justify-content: center;
+       height: 100vh;
+        padding: 10px;
+        width: 100%;
+        margin-right: 0px;
+        background: #be1d28;
+        transition: right 0.4s ease-in-out;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav.show {
+        display: flex;
+    }
+    .logo-wrapper {
+        z-index: 19999;
+    }
+    
+    .burger-menu {
+        z-index: 19999;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:550px) {
+    .top-wrapper {
+        flex-direction: column;
+    }
+    
+    .top-wrapper .insta {
+        padding-left: 10px;
+    }
 }

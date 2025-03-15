@@ -24,7 +24,6 @@ const doorDetails = {
   22: {  text: "#21353", img: "asset/bier-gleb-2.svg" },
   23: {  text: "#21353", img: "asset/baum-rot-1.svg" },
   24: {  text: "#21353", img: "asset/bier-rot-1.svg" },
-  // Weitere Türen hier
 };
 
 // Funktion zum Öffnen des Popups

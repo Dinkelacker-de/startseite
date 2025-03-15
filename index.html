@@ -17,6 +17,7 @@
     <script src="kalender-popup.js" defer></script>
     <script src="kalender.js" defer></script>
     <script src="popup.js" defer></script>
+    <script src="buger-menu.js" defer></script>
     <!--
 
     <script src="parallax-2.js" defer></script>
@@ -37,8 +38,10 @@
         <img src="img/logo-black.png">
         <p class="hi">Willkommen!</p>
         <p>Sind Sie alt genug, um die Brauerei zu erleben?</p>
+        <div class="button-wrapper">
         <button id="close-btn">Ja, ich bin 16</button>
         <button id="close-nein">Nein, leider nicht</button>
+    </div>
     </div>
 
     <header>
@@ -46,7 +49,12 @@
             <img src="img/logo.png" class="logo-img">
             <img src="img/logo-black.png" class="logo-img scrolled" >
         </div>
-        <nav>
+        <button class="burger-menu" id="burger-menu" aria-label="Menü öffnen/schließen">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
             <a href="#box" class="menu-item">Box</a>
             <a href="#kalender" class="menu-item">Adventskalender</a>
             <a href="#rohstoffe" class="menu-item">Rohstoffe</a>
