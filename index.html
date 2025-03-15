@@ -7,21 +7,22 @@
     <title>Dinkelacker</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts/sweet-sans.css">
+
     <script src="akkordeon.js" defer></script>
     <script src="header.js" defer></script>
-    <script src="kalender.js" defer></script>
     <script src="parallax.js" defer></script>
     <script src="snow.js" defer></script>
     <script src="fade-in.js" defer></script>
-  
-  
-
+    <script src="slider-ig.js" defer></script>
+    <script src="kalender-popup.js" defer></script>
+    <script src="kalender.js" defer></script>
+    <script src="popup.js" defer></script>
     <!--
 
     <script src="parallax-2.js" defer></script>
-    <script src="slider-ig.js" defer></script>
+  
 
-   <script src="popup.js" defer></script>
+  
     
     -->
 
@@ -171,11 +172,271 @@
 
 
 -->
-    <div class="wrapper" id="kalender">
-        <div class="inner-wrapper-a"> 
-            
+<div class="wrapper" id="kalender">
+    <div class="inner-wrapper-a"> 
+
+        <div class="door door-1" onclick="openPopup(1)"> 
+            <img src="asset/baum-gelb-1.svg">
+            <p>1</p>
         </div>
+        
+        <div class="door door-2" onclick="openPopup(2)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>2</p>
+        </div>
+        
+        <div class="door door-3" onclick="openPopup(3)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>3</p>
+        </div>
+        
+        <div class="door door-4" onclick="openPopup(4)"> 
+            <img src="asset/bier-rot-2.svg">
+            <p>4</p>
+        </div>
+        
+        <div class="door door-5" onclick="openPopup(5)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>5</p>
+        </div>
+        
+        <div class="door door-6" onclick="openPopup(6)"> 
+            <img src="asset/baum-gelb-1.svg">
+            <p>6</p>
+        </div>
+        
+        <div class="door door-7" onclick="openPopup(7)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>7</p>
+        </div>
+        
+        <div class="door door-8" onclick="openPopup(8)"> 
+            <img src="asset/kugel-gelb-2.svg">
+            <p>8</p>
+        </div>
+        
+        <div class="door door-9" onclick="openPopup(9)"> 
+            <img src="asset/kugel-rot-1.svg">
+            <p>9</p>
+        </div>
+        
+        <div class="door door-10" onclick="openPopup(10)"> 
+            <img src="asset/kugel-gelb-2.svg">
+            <p>10</p>
+        </div>
+        
+        <div class="door door-11" onclick="openPopup(11)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>11</p>
+        </div>
+        
+        <div class="door door-12" onclick="openPopup(12)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>12</p>
+        </div>
+        
+        <div class="door door-13" onclick="openPopup(13)"> 
+            <img src="asset/baum-gelb-1.svg">
+            <p>13</p>
+        </div>
+        
+        <div class="door door-14" onclick="openPopup(14)"> 
+            <img src="asset/bier-rot-2.svg">
+            <p>14</p>
+        </div>
+        
+        <div class="door door-15" onclick="openPopup(15)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>15</p>
+        </div>
+        
+        <div class="door door-16" onclick="openPopup(16)"> 
+            <img src="asset/bier-gleb-2.svg">
+            <p>16</p>
+        </div>
+        
+        <div class="door door-17" onclick="openPopup(17)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>17</p>
+        </div>
+        
+        <div class="door door-18" onclick="openPopup(18)"> 
+            <img src="asset/bier-gleb-2.svg">
+            <p>18</p>
+        </div>
+        
+        <div class="door door-19" onclick="openPopup(19)"> 
+            <img src="asset/kugel-rot-2.svg">
+            <p>19</p>
+        </div>
+        
+        <div class="door door-20" onclick="openPopup(20)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>20</p>
+        </div>
+        
+        <div class="door door-21" onclick="openPopup(21)"> 
+            <img src="asset/bier-rot-2.svg">
+            <p>21</p>
+        </div>
+        
+        <div class="door door-22" onclick="openPopup(22)"> 
+            <img src="asset/bier-gleb-2.svg">
+            <p>22</p>
+        </div>
+        
+        <div class="door door-23" onclick="openPopup(23)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>23</p>
+        </div>
+        
+        <div class="door door-24" onclick="openPopup(24)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>24</p>
+        </div>
+        
+
+
+
+        <div class="door door-layer door-1" onclick="openPopup(1)"> 
+            <img src="asset/baum-gelb-1.svg">
+            <p>1</p>
+        </div>
+        
+        <div class="door door-layer door-2" onclick="openPopup(2)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>2</p>
+        </div>
+        
+        <div class="door door-layer door-3" onclick="openPopup(3)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>3</p>
+        </div>
+        
+        <div class="door door-layer door-4" onclick="openPopup(4)"> 
+            <img src="asset/bier-rot-2.svg">
+            <p>4</p>
+        </div>
+        
+        <div class="door door-layer door-5" onclick="openPopup(5)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>5</p>
+        </div>
+        
+        <div class="door door-layer door-6" onclick="openPopup(6)"> 
+            <img src="asset/baum-gelb-1.svg">
+            <p>6</p>
+        </div>
+        
+        <div class="door door-layer door-7" onclick="openPopup(7)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>7</p>
+        </div>
+        
+        <div class="door door-layer door-8" onclick="openPopup(8)"> 
+            <img src="asset/kugel-gelb-2.svg">
+            <p>8</p>
+        </div>
+        
+        <div class="door door-layer door-9" onclick="openPopup(9)"> 
+            <img src="asset/kugel-rot-1.svg">
+            <p>9</p>
+        </div>
+        
+        <div class="door door-layer door-10" onclick="openPopup(10)"> 
+            <img src="asset/kugel-gelb-2.svg">
+            <p>10</p>
+        </div>
+        
+        <div class="door door-layer door-11" onclick="openPopup(11)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>11</p>
+        </div>
+        
+        <div class="door door-layer door-12" onclick="openPopup(12)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>12</p>
+        </div>
+        
+        <div class="door door-layer door-13" onclick="openPopup(13)"> 
+            <img src="asset/baum-gelb-1.svg">
+            <p>13</p>
+        </div>
+        
+        <div class="door door-layer door-14" onclick="openPopup(14)"> 
+            <img src="asset/bier-rot-2.svg">
+            <p>14</p>
+        </div>
+        
+        <div class="door door-layer door-15" onclick="openPopup(15)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>15</p>
+        </div>
+        
+        <div class="door door-layer door-16" onclick="openPopup(16)"> 
+            <img src="asset/bier-gleb-2.svg">
+            <p>16</p>
+        </div>
+        
+        <div class="door door-layer door-17" onclick="openPopup(17)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>17</p>
+        </div>
+        
+        <div class="door door-layer door-18" onclick="openPopup(18)"> 
+            <img src="asset/bier-gleb-2.svg">
+            <p>18</p>
+        </div>
+        
+        <div class="door door-layer door-19" onclick="openPopup(19)"> 
+            <img src="asset/kugel-rot-2.svg">
+            <p>19</p>
+        </div>
+        
+        <div class="door door-layer door-20" onclick="openPopup(20)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>20</p>
+        </div>
+        
+        <div class="door door-layer door-21" onclick="openPopup(21)"> 
+            <img src="asset/bier-rot-2.svg">
+            <p>21</p>
+        </div>
+        
+        <div class="door door-layer door-22" onclick="openPopup(22)"> 
+            <img src="asset/bier-gleb-2.svg">
+            <p>22</p>
+        </div>
+        
+        <div class="door door-layer door-23" onclick="openPopup(23)"> 
+            <img src="asset/baum-rot-1.svg">
+            <p>23</p>
+        </div>
+        
+        <div class="door door-layer door-24" onclick="openPopup(24)"> 
+            <img src="asset/bier-rot-1.svg">
+            <p>24</p>
+        </div>
+        
+        
     </div>
+    
+</div>
+<!-- Universal-Popup -->
+<div id="popup-door" class="popup-door">
+<div class="popup-door-content">
+    <span class="close" onclick="closePopup(1)">&times;</span>
+    <img id="popup-door-img" src="" alt="Bierflasche">
+    <div class="content-inner">
+        <h4>Dein Gewinn-Code:</h4>
+    <p id="popup-door-text"></p>
+    <input id="popup-door-input1" type="text" placeholder="Name">
+    <input id="popup-door-input2" type="email" placeholder="E-mail">
+    </div>
+
+</div>
+</div>
+
 
 
 
@@ -244,77 +505,58 @@
 
                 <div class="following ig-zahl">
                     <p>105</p>
-                    <p>Following</p>
+                    <p>following</p>
                 </div>
                 
                
             </div>
         </div>
-        <!--
+       
         <div class="slider slider-ig">
             <div class="track">
                 <div class="slide">
-                    <img src="img/ig-1.png">
-                    <div class="ig-content"><p>tesaser text lal la lalala...</p>
-                    <a href="#">mehr</a></div>
+                    <img src="img/ig/1080x1350-Nah-Weihnachtsgold.jpg">
                 </div>
                 <div class="slide">
-                    <img src="img/ig-2.png">
+                    <img src="img/ig/1080x1350-Frozen-Weihnachtsgold.jpg">
                    
                 </div>
                 <div class="slide">
-                    <img src="img/ig-3.png">
-                 
+                    
+                    <img src="img/ig/1350x1080px-Rock am Ring Verlosung.jpg">
                 </div>
                 <div class="slide">
-                    <img src="img/ig-4.png">
+                    <img src="img/ig/1350x1080-biere-weltweit-2.jpg">
+                    </div>
             
+            <div class="slide">
+                    <img src="img/ig/1080x1350-Von-oben-Weihnachtsgold.jpg">
+            </div>
+
+                 <div class="slide">
+                    <img src="img/ig/1350x1080-brauwerkstatt-1.jpg">
+                </div>
+
                 <div class="slide">
-                    <img src="img/ig-5.png">
-            </div>
+                    <img src="img/ig/1350x1080-teamwork-1.jpg">
+                </div>
+
+                <div class="slide">
+                    <img src="img/ig/1350x1080-kalthopfen-1.jpg">
+                </div>
+
+                <div class="slide">
+                    <img src="img/ig/1350x1080-wg-flaschen-unscharf.jpg">
+                </div>
+
+
+
+
         </div>
-    -->
-     
-    </div>
-    <div class="sektion-ig slider-ig">
-    <div class="slider slick-slider-ig slider-ig">
-            <div class="slide">
-                <img src="img/ig-1.png">
-               
-            </div>
-            <div class="slide">
-                <img src="img/ig-2.png">
-            </div>
-            <div class="slide">
-                <img src="img/ig-3.png">
+   
     
-            </div>
-            <div class="slide">
-                <img src="img/ig-4.png">
-       
-            </div>
-            <div class="slide">
-                <img src="img/ig-5.png">
-
-            </div>
-            <div class="slide">
-                <img src="img/ig-1.png">
-            </div>
-            <div class="slide">
-                <img src="img/ig-2.png">
-
-            </div>
-            <div class="slide">
-                <img src="img/ig-3.png">
-                
-            </div>
-            <div class="slide">
-                <img src="img/ig-4.png">
-            </div>
-            <div class="slide">
-                <img src="img/ig-5.png">
-            </div>
     </div>
+
 </div>
 </div>
 
@@ -430,30 +672,43 @@
         speed: 2000,
         cssEase: 'linear',
         pauseOnHover: false,
-        pauseOnFocus: false  
+        pauseOnFocus: false,
+        responsive: [
+    {
+      breakpoint: 1124,
+      settings: {
+        slidesToShow: 6,
+ 
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 4,
+ 
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+
+      }
+    }
+  ]
     
     });
   });
       
 </script>
-<script type="text/javascript">
-    $(document).ready(function(){
 
-    $('.slick-slider-ig').slick({
-        slidesToShow: 5,
-        slidesToScroll:1,
-        autoplay: true,
-        autoplaySpeed: 1,
-        speed: 5000,
-        cssEase: 'linear',
-        pauseOnHover: true,
-        pauseOnFocus: true
-
-    
-    });
-  });
-
-</script>
 
 </body>
 

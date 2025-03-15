@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         layer3.style.transform = `translateY(${-scrollPosition * 1.2}px)`;
     });
 });
-
+ 
 
 
 

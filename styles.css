@@ -312,13 +312,15 @@ img.bg-element {
     min-width: 100%;
     height: auto;
     position: absolute;
-    top: -180px;
-    overflow: hidden;
-    max-width: 100vw;
-    object-position: bottom;
-    object-fit: fill;
+    top: -280px;
     min-height: 220px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
+
 
 .left.content {
     width: 50%;
@@ -369,6 +371,12 @@ img.bg-element {
 	max-height: 550px;
 	object-fit: cover;
 }
+
+
+
+
+
+
 /* IMG TEXT END */
 
 
@@ -418,69 +426,206 @@ div#kalender {
     color: #fff;
     font-size: 17px;
 }
-.wrapper#kalender {
-    position: relative;
-    height: 90vh; /* Adjust this as needed */
-    overflow: hidden; /* Hide anything outside */
-  }
-  #kalender .inner-wrapper-a {
-    opacity: 1;
-    width: 100vw;
-    height: 90vh;
+.door {
     position: relative;
 }
-  
-  #kalender .inner-wrapper-a > div {
-    position: absolute;
-    top: -200px; /* Start above the screen */
-    opacity: 0;
-    transform: rotateX(-90deg);
-    transition: opacity 0.5s, top 1s ease-in-out, transform 0.5s ease, left 1s ease-in-out;
-  }
-  
-  @keyframes fallDown {
-    0% {
-      top: -200px;
-      left: var(--random-left);
-      opacity: 0;
-      transform: rotateX(-90deg);
-    }
-    50% {
-      opacity: 0.5;
-      transform: rotateX(30deg);
-    }
-    100% {
-      top: var(--random-top);
-      left: var(--random-left);
-      opacity: 1;
-      transform: rotateX(0deg);
-    }
-  }
-  
-  #kalender .inner-wrapper-a > div.animate {
-    animation: fallDown 1s ease forwards;
-  }
-  #kalender  p {
-    position: absolute;
-    color: #fff;
-    top: 50%;
-    left: 35%;
-}
-  .door p {
+
+.door p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #fff;
-    position: absolute;
     bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .door svg {
+    left: 0;
+    transform: translateY(-120%) !important;
+}
+
+.door a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .door img {
+    max-height: 125px;
+}
+
+
+.door.door-layer {
+    z-index: 2000;
+}
+
+.inner-wrapper-a {
+    display: flex;
+}
+
+
+
+
+.door.door-1::before {
+    height: 300px;
+}
+
+.door.door-2::before {
+    height: 200px;
+}
+
+.door.door-3::before {
+    height: 200px;
+}
+
+.door.door-8::before {
+    height: 600px;
+}
+
+.door.door-9::before {
+    height: 600px;
+}
+
+.door.door-10::before {
+    height: 800px;
+}
+
+.door.door-11::before {
+    height: 600px;
+}
+
+.door.door-12::before {
+    height: 800px;
+}
+
+.door.door-13::before {
+    height: 300px;
+}
+
+.door.door-14::before {
+    height: 300px;
+}
+
+.door.door-15::before {
+    height: 300px;
+}
+
+.door.door-18::before {
+    height: 800px;
+}
+
+.door.door-19::before {
+    height: 600px;
+}
+
+.door.door-20::before {
+    height: 600px;
+}
+
+.door.door-21::before {
+    height: 700px;
+}
+
+.door.door-22::before {
+    height: 800px;
+}
+
+.door.door-23::before {
+    height: 800px;
+}
+
+
+
+
+/* PopUp Styling */
+.popup-door {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-  }
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px) brightness(0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 22323;
+}
+
+
+
+.popup-door-content {
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30vw;
+    position: relative;
+    min-width: 300px;
+    width: 100%;
+  
+}
+
+ .content-inner {
+    transform: translateY(0%);
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    padding-inline: 10px;
+}
+.popup-door-content img {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-door-content  input {
+    max-width: 25vw;
+    margin-block: 10px;
+}
+
+.door.door-layer {
+    opacity: 0 !important;
+}
+.door.door-layer {
+    cursor: pointer;
+}
+
+
+.door::before {
+    content: "";
+    height: 500px;
+    width: 2px;
+    background-color: #BAA64D;
+    position: absolute;
+    left: calc(50% - 1px);
+    bottom: 0;
+    z-index: -1;
+}
+
+.inner-wrapper-a {
+    position: relative;  /* Jetzt sind die Türen innerhalb dieses Containers positioniert */
+    width: 100%;
+    height: 100vh; /* Falls du eine feste Höhe brauchst */
+}
+
+.door {
+    position: absolute;  /* Jedes Element wird absolut im Container positioniert */
+    width: auto; /* Größe anpassen */
+    height: 100px; /* Höhe für jede Flasche anpassbar */
+    opacity: 0;
+    transition: top 1s ease-out, opacity 1s ease-out; /* Weicher Fall-Effekt */
+}
+
+.popup-door p#popup-door-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.popup-door h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 
 
 /* KALENDER END */
@@ -532,10 +677,7 @@ div#kalender {
 
 /* Banner */
 
-.wrapper.banner {
-    background-color: #BE1D28;
-    padding-block: 25px;
-}
+
 
 .wrapper.banner .slide img {
     max-height: 200px;
@@ -581,29 +723,42 @@ div#kalender {
   .akkordeon-title {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
+
+.akkordeon-title .icon {
+    padding-top: 10px;
+}
+
+
 .akkordeon-title .icon svg {
-    width: 20px;
+    width: 22px;
 }
 
 .akordeon-tab h5 {
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .akordeon-tab.active p {
-    margin-left: 25px;
+    margin-left: 35px;
 }
-
+.akordeon-tab.active h5 {
+    color: #BE1D28;
+}
+.akkordeon-title:hover  h5 {
+    color: #BE1D28;
+}
 
 
 #faq .inner-wrapper {
     padding-block: 50px;
 }
 
-
+.akkordeon-title:hover .icon path, .akordeon-tab.active .icon path {
+    fill: #BE1D28ed;
+}
 
 #faq h2 {
     text-align: center;
@@ -623,6 +778,7 @@ div#ig {
     background-color: #BE1D28;
     padding-top: 75px;
     overflow: hidden;
+
 }
 
 div#ig h2 {
@@ -685,13 +841,13 @@ div#ig h2 {
 
 
 .slider-ig .slide {
-	position: relative;
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	align-items: flex-start;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
     border-radius: 10px;
-    
+    box-shadow: 0px 3px 7px #33333350;
 }
 
 .slider-ig .slide p {
@@ -769,6 +925,7 @@ div#ig .slide .icon {
     max-width: 80%;
     margin-inline: auto;
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 
@@ -935,6 +1092,7 @@ label.screen-reader {
 
 .bg-2.parallax__layer.parallax__layer__2 {
     z-index: 8;
+
 }
 
 .bg-3.parallax__layer.parallax__layer__3 {
@@ -1070,6 +1228,7 @@ background-color: transparent;
 .wrapper.slick-slider-1  {
 	background-color: #BE1D28;
 	padding-block: 25px;
+    z-index: 1999;
 }
 
 .wrapper.slick-slider-1  .slick-track {
@@ -1087,3 +1246,69 @@ background-color: transparent;
     display: flex !important;
     justify-content: center;
   }
+
+
+
+
+
+@media screen and (max-width:990px) {
+    .inner-wrapper {
+        max-width: 90%;
+        margin-inline: auto;
+    }
+    .wrapper.img-text .inner-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .wrapper.img-text .inner-wrapper .content {
+        width: 100%;
+    }
+    
+    .left.content > p, .left.content > h2, .right.content > p, .rigth.content > h2 {
+        max-width: unset;
+    }
+    .wrapper.img-text .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-block: 75px;
+    }
+    
+.wrapper.img-text .inner-wrapper .content {
+    width: 100%;
+}
+
+.left.content > p, .left.content > h2, .right.content > p, .rigth.content > h2 {
+    max-width: unset;
+}
+
+
+#kontakt .inner-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+#kontakt .inner-wrapper .left.content, #kontakt .inner-wrapper .right.content {
+    width: 100%;
+}
+
+div#kontakt {
+    padding-top: 50px;
+}
+
+#kontakt .left.content img {
+    margin-block: 0px;
+}
+
+div#faq {
+    margin-block: 25px;
+}
+
+#rohstoffe .inner-wrapper {
+    padding-block: 75px;
+}
+
+}
