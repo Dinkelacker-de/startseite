@@ -1520,5 +1520,11 @@ h3 {
 }
 
 
+.door p {
+    font-size: 1.3em;
+}
 
+.door img {
+    max-height: 110px;
+}
 }
