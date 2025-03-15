@@ -1101,6 +1101,7 @@ label.screen-reader {
 #popup .button-wrapper {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
   #overlay {
     display: none;
@@ -1124,6 +1125,7 @@ label.screen-reader {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     z-index: 19999;
+    min-width: 90%;
 }
 #popup img {
 	max-height: 80px;
@@ -1159,7 +1161,6 @@ background-color: transparent;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     min-width: 110px;
-    margin-left:10px ;
     }
 
     
@@ -1305,7 +1306,10 @@ div#faq {
 
 
 @media  screen and (max-width:767px) {
-  
+    #popup {
+
+        min-width: 90%;
+    }
     header.scrolled .logo-wrapper img {
         max-width: 175px;
     }
