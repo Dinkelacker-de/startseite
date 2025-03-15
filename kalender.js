@@ -168,37 +168,38 @@ function updateDoorPositions() {
   doors.forEach((door, index) => {
     if (positions[index]) {
       door.style.left = positions[index].x;
-      door.style.top = "-200px"; // Startposition oberhalb des Bildschirms
+      if (!door.classList.contains("animated")) {
+        door.style.top = "-200px"; // Startposition nur setzen, wenn nicht animiert
+      }
     }
   });
 }
 
-updateDoorPositions(); // Setzt die Positionen initial
-
-window.addEventListener("resize", updateDoorPositions); // Aktualisiert beim Resize
+updateDoorPositions();
+window.addEventListener("resize", updateDoorPositions);
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      let positions;
-      if (window.innerWidth < 550) {
-        positions = positionsSmall;
-      } else if (window.innerWidth < 990) {
-        positions = positionsMedium;
-      } else {
-        positions = positionsLarge;
-      }
-
-      doors.forEach((door, index) => {
-        if (positions[index]) {
-          door.style.top = positions[index].y; // Fallen auf finale Position
-          door.style.opacity = "1";
+      const doorIndex = [...doors].indexOf(entry.target);
+      if (doorIndex !== -1) {
+        let positions;
+        if (window.innerWidth < 550) {
+          positions = positionsSmall;
+        } else if (window.innerWidth < 990) {
+          positions = positionsMedium;
+        } else {
+          positions = positionsLarge;
         }
-      });
-      observer.unobserve(entry.target);
+
+        entry.target.style.top = positions[doorIndex].y;
+        entry.target.style.opacity = "1";
+        entry.target.classList.add("animated");
+        observer.unobserve(entry.target);
+      }
     }
   });
 }, { threshold: 0.3 });
 
-observer.observe(document.querySelector("#kalender"));
+doors.forEach(door => observer.observe(door));
 });

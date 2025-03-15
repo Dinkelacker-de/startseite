@@ -262,6 +262,14 @@ img.moon {
     line-height: 1;
 }
 
+.wrapper.hero .content {
+    z-index:8;
+}
+
+.wrapper.hero span {
+    z-index: 9;
+}
+
 .wrapper.hero {
     height: 100vh;
     position: relative;
@@ -269,7 +277,9 @@ img.moon {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.wrapper.hero .content {
+    z-index:8;
+}
 
 img.moon {
     position: absolute;
@@ -339,7 +349,13 @@ img.bg-element {
     align-items: center;
     padding-top: 0px;
     padding-bottom: 100px;
+
    
+}
+
+.wrapper.img-text {
+    z-index: 1999;
+    background-color: #fff;
 }
 .wrapper.img-text-2 .inner-wrapper {
     padding-top: 100px;
@@ -1154,7 +1170,7 @@ label.screen-reader {
     height: 100%;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8px) brightness(0.8);
-    z-index: 999;
+    z-index: 19998;
 }
 #popup {
     display: none;
@@ -1166,7 +1182,7 @@ label.screen-reader {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    z-index: 1001;
+    z-index: 19999;
 }
 #popup img {
 	max-height: 80px;
@@ -1528,3 +1544,6 @@ h3 {
     max-height: 110px;
 }
 }
+
+
+
