@@ -191,11 +191,13 @@ header.scrolled .logo-wrapper img  {
 .hero p {
     color: #fff;
 }
-.wrapper.hero .content.snow {
+.wrapper.hero .content {
 	top: 30%;
 	position: relative;
 	max-width: 450px;
 	left: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .parallax {
@@ -1339,7 +1341,9 @@ div#faq {
 #faq h2 {
     margin-bottom: 20px;
 }
-
+.beer img {
+    width: 250px;
+}
 }
 
 
@@ -1390,6 +1394,32 @@ div#faq {
 #kontakt .inner-wrapper {
     padding-top: 50px;
 }
+
+
+.wrapper.hero {
+    height: 120vh;
+}
+
+.beer {
+    position: relative !important;
+
+}
+
+.wrapper.hero .content {
+    top:25%;
+}
+
+
+
+.beer img {
+    height: 550px;
+    object-fit: contain;
+}
+
+.beer {
+    left: 20%;
+    top: 50%;
+}
 }
 
 
@@ -1423,7 +1453,7 @@ div#faq {
         top: 0px;
 
        justify-content: center;
-       height: 100vh;
+       height: 110vh;
         padding: 10px;
         width: 100%;
         margin-right: 0px;
@@ -1444,6 +1474,8 @@ div#faq {
         z-index: 19999;
     }
 
+
+
 }
 
 
@@ -1457,4 +1489,36 @@ div#faq {
     .top-wrapper .insta {
         padding-left: 10px;
     }
+
+    
+h1 {
+    font-size: 34px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-family: "Sweet Sans Pro Regular", "sans-serif";
+    color: #D6B54C;
+}
+h2 {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.hero .content h2 {
+    font-size: 26px;
+    margin-top: 0px;
+
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+
+.logo-wrapper img {
+    max-width: 175px;
+}
+
+
+
 }
