@@ -311,7 +311,6 @@ img.moon {
 img.bg-element {
     min-width: 100%;
     height: auto;
-
     min-height: 220px;
     max-height: 600px;
     object-fit: cover;
@@ -1216,6 +1215,8 @@ background-color: transparent;
 
   .parallax-2 {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 
