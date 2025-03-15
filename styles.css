@@ -1199,6 +1199,7 @@ background-color: transparent;
 	background-color: #BE1D28;
 	padding-block: 25px;
     z-index: 1999;
+    box-shadow: 0 3px 6px #33333350;
 }
 
 .wrapper.slider-wm  .slick-track {
