@@ -835,6 +835,7 @@ div#ig h2 {
     align-items: flex-start;
     border-radius: 10px;
     box-shadow: 0px 3px 7px #33333350;
+    
 }
 
 .slider-ig .slide p {
@@ -1467,16 +1468,22 @@ div#faq {
 }
 }
 
-
-
-
+/* Burger Menu Button */
 .burger-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px; /* Falls nötig, anpassen */
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 19999;
 }
+
+/* Bars for the burger icon */
 .burger-menu .bar {
     width: 30px;
     height: 3px;
@@ -1484,43 +1491,46 @@ div#faq {
     margin: 5px 0;
     display: block;
     border-radius: 3px;
+    transition: 0.3s ease-in-out !important;
 }
 
-@media (max-width: 1100px) {
-    .burger-menu {
-        display: flex;
-        margin-right:20px ;
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0px;
+/* Wenn das Menü geöffnet ist */
+.burger-menu.active .bar:nth-child(1) {
+    top: 13px;
+    position: relative;
+    transform: rotate(45deg) !important;
+}
 
-       justify-content: center;
-       height: 110vh;
-        padding: 10px;
-        width: 100%;
-        margin-right: 0px;
-        background: #be1d28;
-        transition: right 0.4s ease-in-out;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav.show {
-        display: flex;
-    }
-    .logo-wrapper {
-        z-index: 19999;
-    }
-    
-    .burger-menu {
-        z-index: 19999;
-    }
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0 !important;
+}
 
-    
+.burger-menu.active .bar:nth-child(3) {
+    top: -13px;
+    position: relative;
+    transform: rotate(-45deg) !important;
+}
 
+/* Nav menu styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen on the right */
+    width: 100%; /* Damit es sich komplett über den Bildschirm ausbreitet */
+    height: 100vh;
+    background: #be1d28;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: right 0.4s ease-in-out, left 0.4s ease-in-out; /* Weiche Animation */
+    z-index: 9999;
+}
+
+/* Menü ausweiten (von rechts nach links) */
+nav.show {
+    right: 0;
+    left: 0; /* Dehnt sich über die gesamte Breite aus */
 }
 
 
@@ -1581,4 +1591,52 @@ h3 {
 
 .slider-ig .track, .slider-wm .track {
     will-change: transform;
+}
+
+
+@media screen and (max-width:400px) {
+    .beer {
+        left: 30%;
+        top: 52%;
+    }
+
+    .popup-door-content input[type="submit"] {
+        margin-top: 10px;
+    }
+    
+    .popup-door-content input {
+        margin-block: 5px;
+    }
+    .popup-door p#popup-door-text {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+button.prev-btn {
+    display: none;
+}
+
+button.next-btn {
+    display: none;
+}
+span.dot {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.dots-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-block: 5px;
+}
+
+span.dot.active {
+        opacity: 1;
 }

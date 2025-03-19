@@ -19,7 +19,7 @@ const doorDetails = {
   17: {  text: "#73427", img: "asset/bier-rot-1.svg" },
   18: {  text: "#21353", img: "asset/bier-gleb-2.svg" },
   19: {  text: "#21353", img: "asset/kugel-rot-2.svg" },
-  20: {  text: "#21353", img: "asset/asset/bier-rot-1.svg" },
+  20: {  text: "#21353", img: "asset/bier-rot-1.svg" },
   21: {  text: "#21353", img: "asset/bier-rot-2.svg" },
   22: {  text: "#21353", img: "asset/bier-gleb-2.svg" },
   23: {  text: "#21353", img: "asset/baum-rot-1.svg" },
