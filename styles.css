@@ -1441,7 +1441,7 @@ div#faq {
 
 .slider-wm img {
     object-fit: contain;
-    min-width: 150px;
+    min-width: 100px;
     margin-inline: auto;
   }
 
