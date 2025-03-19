@@ -513,6 +513,7 @@ div#kalender {
     justify-content: center;
     align-items: center;
     z-index: 22323;
+    overflow: visible;
 }
 
 
@@ -566,7 +567,7 @@ div#kalender {
 }
 
 
-.door::before {
+.string {
     content: "";
     height: 1400px;
     width: 2px;
@@ -1456,7 +1457,14 @@ div#faq {
 .content-inner {
     top: 40%;
 }
+.akordeon-tab .akkordeon-title h5 {
+    font-size: 20px;
 
+}
+
+.akordeon-tab p {
+    padding-left: 0;
+}
 }
 
 
@@ -1521,6 +1529,7 @@ div#faq {
 @media screen and (max-width:550px) {
     .top-wrapper {
         flex-direction: column;
+        gap: 15px;
     }
     
     .top-wrapper .insta {
