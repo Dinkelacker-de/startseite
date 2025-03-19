@@ -57,7 +57,11 @@ h2 {
     position: relative;
 }
 
-
+mark {
+    background: transparent;
+    font-weight: bold;
+    color: #BE1D28;
+}
 /* Button */
 .button.cta {
   
@@ -315,6 +319,7 @@ img.moon {
 .img-text#box img {
     width: 100%;
     border-radius: 10px;
+    
 }
 
 .img-text img {
@@ -393,7 +398,7 @@ img.bg-element {
 
 .img-text img {
 	border-radius: 10px;
-	max-height: 550px;
+	max-height: 750px;
 	object-fit: cover;
 }
 
@@ -1125,7 +1130,8 @@ label.screen-reader {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     z-index: 19999;
-    min-width: 90%;
+    min-width: fit-content;
+    max-width: 90%;
 }
 #popup img {
 	max-height: 80px;
