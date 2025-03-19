@@ -372,7 +372,7 @@ img.bg-element {
    
 }
 .left.content > p, .left.content > h2, .right.content > p, .rigth.content > h2 {
-    max-width: 500px;
+    max-width: 650px;
 }
 
 
@@ -426,7 +426,9 @@ img.bg-element {
     flex-wrap: wrap;
 }
 
-
+.popup-door span.close {
+    display: none;
+}
 
 
 
@@ -478,6 +480,7 @@ div#kalender {
     align-items: center;
 }
   .door img {
+    max-width: 80px;
     max-height: 125px;
 }
 
@@ -521,18 +524,25 @@ div#kalender {
     position: relative;
     min-width: 300px;
     width: 100%;
-  
+    display: flex;
+    justify-content: center;
 }
 
- .content-inner {
-    transform: translateY(0%);
+.content-inner {
     color: #ffff;
     position: absolute;
     top: 50%;
     padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 .popup-door-content img {
     width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    overflow: visible;
 }
 
 .close {
@@ -544,7 +554,7 @@ div#kalender {
 }
 
 .popup-door-content  input {
-    max-width: 25vw;
+    max-width: 350px;
     margin-block: 10px;
 }
 
@@ -563,7 +573,7 @@ div#kalender {
     background-color: #BAA64D;
     position: absolute;
     left: calc(50% - 1px);
-    bottom: 0;
+    bottom: 90px;
     z-index: -1;
 }
 
@@ -593,6 +603,16 @@ div#kalender {
     margin-bottom: 15px;
 }
 
+
+
+.popup-door.door-13 input.red, .popup-door.door-1 input.red, .popup-door.door-16 input.red, .popup-door.door-18 input.red, .popup-door.door-10 input.red, .popup-door.door-8 input.red, .popup-door.door-22 input.red, .popup-door.door-6 input.red {
+    background-color: #BE1D28ed;
+    border-color: #BE1D28ed;
+}
+
+.popup-door.door-13 input.red:hover {
+    background-color: transparent;
+}
 
 /* KALENDER END */
 
@@ -1038,7 +1058,15 @@ label.screen-reader {
 
   footer a {
     color: #fff;
-  }
+    text-decoration: none;
+}
+
+
+.footer a:hover { 
+    color: #BAA64D;
+}
+
+
   .legal {
     margin-left: auto;
     display: flex;
@@ -1224,7 +1252,11 @@ background-color: transparent;
     justify-content: center;
   }
 
-
+@media screen and (max-width:1300px) {
+    .left.content {
+        width: 70%;
+    }
+}
 
 
 
@@ -1308,6 +1340,14 @@ div#faq {
 }
 .beer img {
     width: 250px;
+}
+
+.popup-door-content input {
+    max-width: 250px;
+}
+
+.popup-door-content {
+    max-width: 50vw;
 }
 }
 
@@ -1409,6 +1449,14 @@ div#faq {
     filter: grayscale(0);
     transition: all 0.3s ease-in-out;
 }
+.img-text img {
+    max-height: 550px;
+}
+
+.content-inner {
+    top: 40%;
+}
+
 }
 
 
@@ -1515,6 +1563,8 @@ h3 {
 
 .door img {
     max-height: 110px;
+    max-width: 60px;
+
 }
 }
 
