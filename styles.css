@@ -1400,6 +1400,9 @@ background-color: transparent;
     .rohstoffe img {
         max-height: 250px;
     }
+    .popup-door-content img {
+        width: 70%;
+    }
   }
 
 @media screen and (max-width:1300px) {
@@ -1410,6 +1413,33 @@ background-color: transparent;
       .left.content, .right.content {
         width:100%;
       }
+}
+
+@media  screen and (max-width:1200px) {
+    .burger-menu {
+        display: flex;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Start off-screen on the right */
+        width: 100%; /* Damit es sich komplett über den Bildschirm ausbreitet */
+        height: 100vh;
+        background: #be1d28;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        transition: right 0.4s ease-in-out, left 0.4s ease-in-out; /* Weiche Animation */
+        z-index: 9999;
+    }
+    
+    /* Menü ausweiten (von rechts nach links) */
+    nav.show {
+        right: 0;
+        left: 0; /* Dehnt sich über die gesamte Breite aus */
+    }
+    
 }
 
 
@@ -1508,6 +1538,10 @@ background-color: transparent;
 
 
 @media  screen and (max-width:767px) {
+
+    .popup-door-content img {
+        width: 100%;
+    }
     .inner-wrapper-a {
 
         height: 100vh;
@@ -1686,37 +1720,6 @@ background-color: transparent;
 
 .burger-menu {
     display: none;
-}
-@media  screen and (max-width:1600px) {
-    .popup-door-content img {
-        width: 70%;
-    }
-}
-@media  screen and (max-width:1200px) {
-    .burger-menu {
-        display: flex;
-    }
-    nav {
-        position: fixed;
-        top: 0;
-        left: -100%; /* Start off-screen on the right */
-        width: 100%; /* Damit es sich komplett über den Bildschirm ausbreitet */
-        height: 100vh;
-        background: #be1d28;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        transition: right 0.4s ease-in-out, left 0.4s ease-in-out; /* Weiche Animation */
-        z-index: 9999;
-    }
-    
-    /* Menü ausweiten (von rechts nach links) */
-    nav.show {
-        right: 0;
-        left: 0; /* Dehnt sich über die gesamte Breite aus */
-    }
-    
 }
 
 
