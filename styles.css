@@ -885,9 +885,6 @@ img.bg-element {
     flex-direction: column;
     align-items: flex-start;
     border-radius: 10px;
-   
-    padding-inline: 10px; 
-    
 }
 
 .slider-ig .slide p {
@@ -1013,7 +1010,7 @@ img.bg-element {
   /* Dots Styles */
   #dots {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
   }
