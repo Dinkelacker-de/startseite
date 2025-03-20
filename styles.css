@@ -20,6 +20,8 @@ body {
 
 figure {
     margin: 0;
+    display: flex;
+    flex-direction: column;   
 }
 legend {
     display: none;
@@ -710,6 +712,8 @@ img.bg-element {
     display: flex;
     flex-direction: column;
   }
+
+
 /* Rohstoffe  END */
 
 
@@ -826,6 +830,7 @@ img.bg-element {
 
 .slider-ig .slide img {
     max-height: 600px;
+  
 }
 
 .slider.slider-ig {
@@ -852,13 +857,13 @@ img.bg-element {
 
 .slider-ig .track {
     display: flex;
-    gap: 10px;
     white-space: nowrap;
     will-change: transform;
 }
 
 .slider-ig .slide {
     min-width: 300px;
+    padding-inline: 10px;
 }
 
 .slider-ig .slide img {
@@ -992,7 +997,7 @@ img.bg-element {
   
   .slider-ig .track {
     display: flex;
-    gap: 20px;
+    gap: 0px;
   }
   
   .slider-ig .slide {
@@ -1059,7 +1064,14 @@ img.bg-element {
 .map-marker:hover .map-link, .map-marker:focus .map-link, .map-marker:active .map-link   {
     display: block;
 }
-
+.map-marker{
+    margin-top: 10px;
+}
+.map-marker a{
+    text-decoration: none;
+   color: #BE1D28; 
+   font-weight: 700;
+}
 
 #kontakt .inner-wrapper {
     display: flex;
@@ -1384,12 +1396,19 @@ background-color: transparent;
         min-width: 125px;
 
       }
+    .rohstoffe img {
+        max-height: 250px;
+    }
   }
 
 @media screen and (max-width:1300px) {
-    .left.content {
-        width: 70%;
-    }
+    .wrapper.img-text-2 .inner-wrapper {
+        flex-direction:column;
+      }
+      
+      .left.content, .right.content {
+        width:100%;
+      }
 }
 
 
