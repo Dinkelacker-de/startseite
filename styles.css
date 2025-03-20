@@ -634,7 +634,7 @@ img.bg-element {
 .inner-wrapper-a {
     position: relative;  /* Jetzt sind die Türen innerhalb dieses Containers positioniert */
     width: 100%;
-    height: 100vh; /* Falls du eine feste Höhe brauchst */
+    height: 80vh; /* Falls du eine feste Höhe brauchst */
 }
 
 .door {
@@ -1507,6 +1507,10 @@ background-color: transparent;
 
 
 @media  screen and (max-width:767px) {
+    .inner-wrapper-a {
+
+        height: 100vh;
+    }
     .popup-door-content img {
 
         top: 0%;
