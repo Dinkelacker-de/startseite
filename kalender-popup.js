@@ -43,13 +43,10 @@ function openPopup(doorNumber) {
   popup.style.display = "flex";
 }
 
-// Funktion zum Schließen des Popups
-function closePopup() {
-  document.getElementById("popup-door").style.display = "none";
-}
 
-document.getElementById("popup-door").addEventListener("click", function(event) {
-  if (!document.querySelector(".popup-door-content").contains(event.target)) {
-      closePopup();
-  }
+// Funktion zum Schließen des Popups beim Klicken auf den Close-Button
+document.querySelectorAll(".popup-door .close").forEach(button => {
+  button.addEventListener("click", function () {
+    document.getElementById("popup-door").style.display = "none";
+  });
 });

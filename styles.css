@@ -429,7 +429,15 @@ img.bg-element {
 .popup-door span.close {
     display: none;
 }
-
+.content-inner input.close {
+    position: relative;
+    background-color: transparent;
+    border: navajowhite;
+    padding: 5px;
+    margin-inline: auto;
+    top: unset;
+    right: unset;
+}
 
 
 #kalender {
@@ -522,28 +530,32 @@ div#kalender {
     border-radius: 10px;
     text-align: center;
     max-width: 30vw;
-    position: relative;
     min-width: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .content-inner {
     color: #ffff;
-    position: absolute;
-    top: 50%;
     padding-inline: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 .popup-door-content img {
-    width: 100%;
-    min-height: 100vh;
+    width: 70%;
     object-fit: cover;
     overflow: visible;
+    position: absolute;
+    z-index: -1;
+    top: -20%;
+    min-width: 600px;
 }
 
 .close {
@@ -1404,6 +1416,11 @@ div#faq {
 
 
 @media  screen and (max-width:767px) {
+    .popup-door-content img {
+
+        top: 0%;
+
+    }
     #popup {
 
         min-width: 90%;
@@ -1515,6 +1532,13 @@ div#faq {
 .akordeon-tab p {
     padding-left: 0;
 }
+
+
+.popup-door-content {
+    max-width: unset !important;
+}
+
+
 }
 
 /* Burger Menu Button */
@@ -1660,8 +1684,8 @@ h3 {
         margin-bottom: 0px;
     }
     .content-inner {
+        width:65%;
         top: 35%;
-        width: 80%;
     }
 }
 
