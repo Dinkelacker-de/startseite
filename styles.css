@@ -1042,11 +1042,33 @@ img.bg-element {
     width: 100%;
 }
 
+.map-marker {
+    position: absolute;
+    top: 48%;
+    left: 49%;
+}
+
+.map-link {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    line-height: 1;
+    display: none;
+}
+
+.map-marker:hover .map-link, .map-marker:focus .map-link, .map-marker:active .map-link   {
+    display: block;
+}
+
+
 #kontakt .inner-wrapper {
     display: flex;
     gap: 75px;
     align-items: center;
    
+}
+#kontakt .left.content{
+ position: relative;   
 }
 
 #kontakt {
