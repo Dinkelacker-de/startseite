@@ -18,6 +18,24 @@ body {
 
 }
 
+
+@font-face {
+    font-family: "span", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "span", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "span", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
 .inner-wrapper {
     max-width: 80%;
     margin-inline: auto;
@@ -27,31 +45,46 @@ h1 {
     font-size: 54px;
     margin-top: 0px;
     margin-bottom: 15px;
-    font-family: "Sweet Sans Pro Regular", "sans-serif";
+    font-family: "span", serif;
     color: #D6B54C;
 }
 h2 {
-    font-size: 34px;
+    font-size: 40px;
     margin-top: 0px;
     margin-bottom: 20px;
 }
 
 h3 {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+h4 {
     font-size: 28px;
     margin-top: 10px;
     margin-bottom: 17px;
 }
+h5 {
+    font-size: 24px;
+   
+   }
 
-p {
+   h5 {
+    font-size: 22px;
+   
+   }   
+   p {
     font-size: 16px;
     margin-block: 0px;
     font-family: "Sweet Sans Pro Regular", "sans-serif";
     padding-bottom: 10px;
 }
-a, h1, h2, h3, h4, h5, h6, span, input, textarea, div, label{
+a, span, input, textarea, div, label{
     font-family: "Sweet Sans Pro Regular", "sans-serif";
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: "span", serif;
+}
 h2 {
     z-index: 13;
     position: relative;
@@ -61,6 +94,9 @@ mark {
     background: transparent;
     font-weight: bold;
     color: #BE1D28;
+}
+mark.red {
+    color: #D6B54C;
 }
 /* Button */
 .button.cta {
@@ -267,7 +303,7 @@ img.moon {
 .hero .content h2 {
     margin-bottom: 0px;
     color: #D6B54C;
-    font-size:34px;
+    font-size:40px;
     line-height: 1;
 }
 
@@ -1559,6 +1595,7 @@ div#faq {
 /* Bars for the burger icon */
 .burger-menu .bar {
     width: 30px;
+    min-width: 30px;
     height: 3px;
     background-color: #D6B54C;
     margin: 5px 0;
@@ -1585,25 +1622,37 @@ div#faq {
 }
 
 /* Nav menu styling */
-nav {
-    position: fixed;
-    top: 0;
-    left: -100%; /* Start off-screen on the right */
-    width: 100%; /* Damit es sich komplett über den Bildschirm ausbreitet */
-    height: 100vh;
-    background: #be1d28;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    transition: right 0.4s ease-in-out, left 0.4s ease-in-out; /* Weiche Animation */
-    z-index: 9999;
+
+
+.burger-menu {
+    display: none;
 }
 
-/* Menü ausweiten (von rechts nach links) */
-nav.show {
-    right: 0;
-    left: 0; /* Dehnt sich über die gesamte Breite aus */
+@media  screen and (max-width:1200px) {
+    .burger-menu {
+        display: flex;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Start off-screen on the right */
+        width: 100%; /* Damit es sich komplett über den Bildschirm ausbreitet */
+        height: 100vh;
+        background: #be1d28;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        transition: right 0.4s ease-in-out, left 0.4s ease-in-out; /* Weiche Animation */
+        z-index: 9999;
+    }
+    
+    /* Menü ausweiten (von rechts nach links) */
+    nav.show {
+        right: 0;
+        left: 0; /* Dehnt sich über die gesamte Breite aus */
+    }
+    
 }
 
 
@@ -1639,7 +1688,7 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 34px;
     margin-top: 10px;
     margin-bottom: 17px;
 }
@@ -1717,3 +1766,17 @@ span.dot {
 span.dot.active {
         opacity: 1;
 }
+
+
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+    .popup-door-content img {
+  width:  100%;
+}
+
+img#popup-door-img {
+    width: 100%;
+    top: 0;
+}
+}
+
