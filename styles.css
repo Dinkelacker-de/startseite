@@ -1377,6 +1377,15 @@ background-color: transparent;
     justify-content: center;
   }
 
+
+  @media screen and (max-width:1600px) {
+    .slider-wm img {
+  
+        min-width: 125px;
+
+      }
+  }
+
 @media screen and (max-width:1300px) {
     .left.content {
         width: 70%;
