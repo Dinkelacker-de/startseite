@@ -1,684 +1,613 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dinkelacker</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts/sweet-sans.css">
-    <link rel="stylesheet" href="https://use.typekit.net/pmw4qnc.css">
-    <script src="akkordeon.js" defer></script>
-    <script src="header.js" defer></script>
-    <script src="parallax.js" defer></script>
-
-    <script src="fade-in.js" defer></script>
-    <script src="slider-ig.js" defer></script>
-    <script src="slider.js" defer></script>
-    <script src="kalender-popup.js" defer></script>
-    <script src="kalender.js" defer></script>
-    <script src="popup.js" defer></script>
-    <script src="buger-menu.js" defer></script>
-    
-
-    <!--
-    <script src="snow.js" defer></script>
-    <script src="parallax-2.js" defer></script>
-   
-    <script src="snow.js" defer></script>
-  
-    
-    -->
-
-    
-<link rel="stylesheet" type="text/css" href="slick\slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick\slick-theme.css"/>
-<script src="slick-slider.js" defer></script>
-</head>
-<body>
-    <div id="overlay"></div>
-    <div id="popup">
-        <img src="img/logo-black.png">
-        <p class="hi">Willkommen!</p>
-        <p>Sind Sie alt genug, um die Brauerei zu erleben?</p>
-        <div class="button-wrapper">
-        <button id="close-btn">Ja, ich bin 16</button>
-        <button id="close-nein">Nein, leider nicht</button>
-    </div>
-    </div>
-
-    <header>
-        <div class="logo-wrapper">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Dinkelacker</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="fonts/sweet-sans.css">
+      <link rel="stylesheet" href="https://use.typekit.net/pmw4qnc.css">
+      <script src="akkordeon.js" defer></script>
+      <script src="header.js" defer></script>
+      <script src="parallax.js" defer></script>
+      <script src="fade-in.js" defer></script>
+      <script src="slider-ig.js" defer></script>
+      <script src="slider.js" defer></script>
+      <script src="kalender-popup.js" defer></script>
+      <script src="kalender.js" defer></script>
+      <script src="popup.js" defer></script>
+      <script src="buger-menu.js" defer></script>
+      <!--
+         <script src="snow.js" defer></script>
+         <script src="parallax-2.js" defer></script>
+         -->
+      <link rel="stylesheet" type="text/css" href="slick\slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick\slick-theme.css"/>
+      <script src="slick-slider.js" defer></script>
+   </head>
+   <body>
+      <div id="overlay"></div>
+      <div id="popup">
+         <img src="img/logo-black.png">
+         <p class="hi">Willkommen!</p>
+         <p>Sind Sie alt genug, um die Brauerei zu erleben?</p>
+         <div class="button-wrapper">
+            <button id="close-btn" aria-label="Ja, ich bin 16 Jahre oder älter und darf die Seite betreten">Ja, ich bin 16</button>
+            <button id="close-nein" aria-label="Nein, ich bin nicht alt genug und verlasse die Seite">Nein, leider nicht</button>
+         </div>
+      </div>
+      <header>
+         <div class="logo-wrapper">
             <img src="img/logo.png" class="logo-img">
             <img src="img/logo-black.png" class="logo-img scrolled" >
-        </div>
-        <button class="burger-menu" id="burger-menu" aria-label="Menü öffnen/schließen">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <nav id="nav-menu">
-            <a href="#box" class="menu-item">Box</a>
-            <a href="#banner" class="menu-item">Adventskalender</a>
-            <a href="#rohstoffe" class="menu-item">Rohstoffe</a>
-            <a href="#faq" class="menu-item">Faq</a>
-            <a href="#kontakt" class="menu-item">Kontakt</a>
-        </nav>
-    </header>
-
-    <div class="wrapper hero" id="particles-js">
-         <div class="content">
-        <h2>Dinkelacker</h2>
-         <h1>Weihnachtsgold</h1>
-        <p>Festlicher Genuss aus Stuttgart – Das handwerklich gebraute Festbier mit weichen Aromen von Steinobst und Malzbonbon – perfekt für die deftigen Schlemmereien der Weihnachtstage. Prost!</p>
-        
-            <div class="cta button">
-                <a href="#banner" class="">Unser Adventskalender</a>
-            </div>
-    </div>
-       <div class="bg">
-        <div class="parallax">
-            <div class="beer">
-                <img src="img/bier.png">
-    
-            </div>
-        <div class="bg-3 parallax__layer parallax__layer__3"><img class="" src="asset/snow-3.svg"></div>
-        <div class="bg-2 parallax__layer parallax__layer__2"><img class="" src="asset/snow-2.svg"></div>
-        <div class="bg-1 parallax__layer parallax__layer__1"><img class="" src="asset/snow-1.svg"></div>
-        
-        </div>
-        <img class="moon" src="asset/moon.png">  
-        </div>
-    </div>
-    <div class="wrapper img-text" id="box">
-        <div class="inner-wrapper">
-
-        <div class="left content">
-            <h2>Genussvolle Weihnachten mit unserem Weihnachtsbier-Set!</h2>
-            <p>Lass dich in der Weihnachtszeit von unserer exklusiven<mark> Weihnachtsgold-Geschenkbox</mark> zu besonderen Genussmomenten verführen.</p>
-            <p>In der limitierten Box erwarten dich zwei Flaschen unseres brandneuen<mark> Weihnachtsgold</mark> – ein edles, goldfarbenes Festbier mit Aromen von Steinobst und Malzbonbon, harmonisch ausbalanciert und vollmundig im Geschmack. Dazu gibt es ein stilvolles Stiefel-Glas für den perfekten Festtags-Look.</p>
-            <p>Ob als Geschenk oder für dich selbst – dieses Set verleiht jeder Feier eine festliche Note.</p>
-            <p>Unsere limitierte <mark> Weihnachtsgold-Geschenkbox</mark> kannst du mit etwas Glück auch in unserem großen Adventskalender-Gewinnspiel ergattern! Öffne täglich ein Türchen und gewinne tolle Preise – Von einer Heißluftballonfahrt bis hin zu Tickets für Rock am Ring!</p>
-            <div class="cta button">
-                <a href="#banner">Jetzt mit machen</a>
-            </div>
-        </div>
-        <div class="right content">
-            <img src="img/img/Bier-mit-stiefel.jpg" alt="">
-        </div>
-    </div>
-    </div>
-
-
-
-    <div class="wrapper slider slider-wm" id="banner">
-
-        <div class="track">
-
-            <div class="slide">
-                <img src="asset/weihnachtsmann.svg">
-            </div>
-
-            <div class="slide">
-                <img src="asset/weihnachtsmann.svg">
-            </div>
-
-            <div class="slide">
-                <img src="asset/weihnachtsmann.svg">
-            </div>
-
-            <div class="slide">
-                <img src="asset/weihnachtsmann.svg">
-                </div>
-        
-            <div class="slide">
-                <img src="asset/weihnachtsmann.svg">
-            </div>
-
-             <div class="slide">
-                <img src="asset/weihnachtsmann.svg">
-            </div>
-            
-    
-
-</div>
-
          </div>
-
-
-<div class="wrapper" id="kalender">
-    <div class="inner-wrapper-a"> 
-
-        <div class="door door-1" onclick="openPopup(1)"> 
-            <div class="string"></div>
-            <img src="asset/baum-gelb-1.svg">
-            <p>1</p>
-        </div>
-        
-        <div class="door door-2" onclick="openPopup(2)"> 
-            <div class="string"></div>
-            <img src="asset/baum-rot-1.svg">
-            <p>2</p>
-        </div>
-        
-        <div class="door door-3" onclick="openPopup(3)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>3</p>
-        </div>
-        
-        <div class="door door-4" onclick="openPopup(4)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-2.svg">
-            <p>4</p>
-        </div>
-        
-        <div class="door door-5" onclick="openPopup(5)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>5</p>
-        </div>
-        
-        <div class="door door-6" onclick="openPopup(6)"> 
-            <div class="string"></div>
-            <img src="asset/baum-gelb-1.svg">
-            <p>6</p>
-        </div>
-        
-        <div class="door door-7" onclick="openPopup(7)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>7</p>
-        </div>
-        
-        <div class="door door-8" onclick="openPopup(8)"> 
-            <div class="string"></div>
-            <img src="asset/kugel-gelb-2.svg">
-            <p>8</p>
-        </div>
-        
-        <div class="door door-9" onclick="openPopup(9)"> 
-            <div class="string"></div>
-            <img src="asset/kugel-rot-1.svg">
-            <p>9</p>
-        </div>
-        
-        <div class="door door-10" onclick="openPopup(10)"> 
-            <div class="string"></div>
-            <img src="asset/kugel-gelb-2.svg">
-            <p>10</p>
-        </div>
-        
-        <div class="door door-11" onclick="openPopup(11)"> 
-            <div class="string"></div>
-            <img src="asset/baum-rot-1.svg">
-            <p>11</p>
-        </div>
-        
-        <div class="door door-12" onclick="openPopup(12)"> 
-            <div class="string"></div>
-            <img src="asset/baum-rot-1.svg">
-            <p>12</p>
-        </div>
-        
-        <div class="door door-13" onclick="openPopup(13)"> 
-            <div class="string"></div>
-            <img src="asset/baum-gelb-1.svg">
-            <p>13</p>
-        </div>
-        
-        <div class="door door-14" onclick="openPopup(14)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-2.svg">
-            <p>14</p>
-        </div>
-        
-        <div class="door door-15" onclick="openPopup(15)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>15</p>
-        </div>
-        
-        <div class="door door-16" onclick="openPopup(16)"> 
-            <div class="string"></div>
-            <img src="asset/bier-gleb-2.svg">
-            <p>16</p>
-        </div>
-        
-        <div class="door door-17" onclick="openPopup(17)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>17</p>
-        </div>
-        
-        <div class="door door-18" onclick="openPopup(18)"> 
-            <div class="string"></div>
-            <img src="asset/bier-gleb-2.svg">
-            <p>18</p>
-        </div>
-        
-        <div class="door door-19" onclick="openPopup(19)"> 
-            <div class="string"></div>
-            <img src="asset/kugel-rot-2.svg">
-            <p>19</p>
-        </div>
-        
-        <div class="door door-20" onclick="openPopup(20)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>20</p>
-        </div>
-        
-        <div class="door door-21" onclick="openPopup(21)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-2.svg">
-            <p>21</p>
-        </div>
-        
-        <div class="door door-22" onclick="openPopup(22)"> 
-            <div class="string"></div>
-            <img src="asset/bier-gleb-2.svg">
-            <p>22</p>
-        </div>
-        
-        <div class="door door-23" onclick="openPopup(23)"> 
-            <div class="string"></div>
-            <img src="asset/baum-rot-1.svg">
-            <p>23</p>
-        </div>
-        
-        <div class="door door-24" onclick="openPopup(24)"> 
-            <div class="string"></div>
-            <img src="asset/bier-rot-1.svg">
-            <p>24</p>
-        </div>
-        
-
-
-
-        <div class="door door-layer door-1" onclick="openPopup(1)"> 
-            <img src="asset/baum-gelb-1.svg">
-            <p>1</p>
-        </div>
-        
-        <div class="door door-layer door-2" onclick="openPopup(2)"> 
-            <img src="asset/baum-rot-1.svg">
-            <p>11</p>
-        </div>
-        
-        <div class="door door-layer door-3" onclick="openPopup(3)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>3</p>
-        </div>
-        
-        <div class="door door-layer door-4" onclick="openPopup(4)"> 
-            <img src="asset/bier-rot-2.svg">
-            <p>4</p>
-        </div>
-        
-        <div class="door door-layer door-5" onclick="openPopup(5)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>5</p>
-        </div>
-        
-        <div class="door door-layer door-6" onclick="openPopup(6)"> 
-            <img src="asset/baum-gelb-1.svg">
-            <p>6</p>
-        </div>
-        
-        <div class="door door-layer door-7" onclick="openPopup(7)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>7</p>
-        </div>
-        
-        <div class="door door-layer door-8" onclick="openPopup(8)"> 
-            <img src="asset/kugel-gelb-2.svg">
-            <p>8</p>
-        </div>
-        
-        <div class="door door-layer door-9" onclick="openPopup(9)"> 
-            <img src="asset/kugel-rot-1.svg">
-            <p>9</p>
-        </div>
-        
-        <div class="door door-layer door-10" onclick="openPopup(10)"> 
-            <img src="asset/kugel-gelb-2.svg">
-            <p>10</p>
-        </div>
-        
-        <div class="door door-layer door-11" onclick="openPopup(11)"> 
-            <img src="asset/baum-rot-1.svg">
-            <p>2</p>
-        </div>
-        
-        <div class="door door-layer door-12" onclick="openPopup(12)"> 
-            <img src="asset/baum-rot-1.svg">
-            <p>12</p>
-        </div>
-        
-        <div class="door door-layer door-13" onclick="openPopup(13)"> 
-            <img src="asset/baum-gelb-1.svg">
-            <p>13</p>
-        </div>
-        
-        <div class="door door-layer door-14" onclick="openPopup(14)"> 
-            <img src="asset/bier-rot-2.svg">
-            <p>14</p>
-        </div>
-        
-        <div class="door door-layer door-15" onclick="openPopup(15)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>15</p>
-        </div>
-        
-        <div class="door door-layer door-16" onclick="openPopup(16)"> 
-            <img src="asset/bier-gleb-2.svg">
-            <p>16</p>
-        </div>
-        
-        <div class="door door-layer door-17" onclick="openPopup(17)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>17</p>
-        </div>
-        
-        <div class="door door-layer door-18" onclick="openPopup(18)"> 
-            <img src="asset/bier-gleb-2.svg">
-            <p>18</p>
-        </div>
-        
-        <div class="door door-layer door-19" onclick="openPopup(19)"> 
-            <img src="asset/kugel-rot-2.svg">
-            <p>19</p>
-        </div>
-        
-        <div class="door door-layer door-20" onclick="openPopup(20)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>20</p>
-        </div>
-        
-        <div class="door door-layer door-21" onclick="openPopup(21)"> 
-            <img src="asset/bier-rot-2.svg">
-            <p>21</p>
-        </div>
-        
-        <div class="door door-layer door-22" onclick="openPopup(22)"> 
-            <img src="asset/bier-gleb-2.svg">
-            <p>22</p>
-        </div>
-        
-        <div class="door door-layer door-23" onclick="openPopup(23)"> 
-            <img src="asset/baum-rot-1.svg">
-            <p>23</p>
-        </div>
-        
-        <div class="door door-layer door-24" onclick="openPopup(24)"> 
-            <img src="asset/bier-rot-1.svg">
-            <p>24</p>
-        </div>
-        
-        
-    </div>
-    
-</div>
-<!-- Universal-Popup -->
-<div id="popup-door" class="popup-door">
-    <div class="popup-door-content">
-        <span class="close" onclick="closePopup(1)">&times;</span>
-        <img id="popup-door-img" src="" alt="Bierflasche">
-        <div class="content-inner">
-            <h4>Dein Gewinn-Code:</h4>
-        <p id="popup-door-text"></p>
-        <input id="popup-door-input1" type="text" placeholder="Name">
-        <input id="popup-door-input2" type="email" placeholder="E-mail">
-        <input type="submit" value="Jezt mitmachen" class="red">
-        <input type="submit" value="Schließen" class="close">
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="parallax-2">
-    <img src="asset/stugges.png" class="bg-element">
-    <div class="wrapper img-text img-text-2">
-        <div class="outer-wrapper">
+         <button class="burger-menu" id="burger-menu" aria-label="Menü öffnen/schließen">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         </button>
+         <nav id="nav-menu" aria-label="Hauptnavigation">
+            <a href="#box" class="menu-item" aria-label="Zum Bereich Box">Box</a>
+            <a href="#banner" class="menu-item" aria-label="Zum Adventskalender">Adventskalender</a>
+            <a href="#rohstoffe" class="menu-item" aria-label="Zu den Rohstoffen">Rohstoffe</a>
+            <a href="#faq" class="menu-item" aria-label="Zu den häufig gestellten Fragen">FAQ</a>
+            <a href="#kontakt" class="menu-item" aria-label="Zum Kontaktformular">Kontakt</a>
+         </nav>
+      </header>
+      <main>
+      <section class="wrapper hero" id="particles-js">
+         <div class="content">
+            <h2>Dinkelacker</h2>
+            <h1>Weihnachtsgold</h1>
+            <p>Festlicher Genuss aus Stuttgart – Das handwerklich gebraute Festbier mit weichen Aromen von Steinobst und Malzbonbon – perfekt für die deftigen Schlemmereien der Weihnachtstage. Prost!</p>
+            <div class="cta button">
+               <a href="#banner" class="">Unser Adventskalender</a>
+            </div>
+         </div>
+         <div class="bg">
+            <div class="parallax">
+               <div class="beer">
+                  <img src="img/bier.png">
+               </div>
+               <div class="bg-3 parallax__layer parallax__layer__3"><img class="" src="asset/snow-3.svg"></div>
+               <div class="bg-2 parallax__layer parallax__layer__2"><img class="" src="asset/snow-2.svg"></div>
+               <div class="bg-1 parallax__layer parallax__layer__1"><img class="" src="asset/snow-1.svg"></div>
+            </div>
+            <img class="moon" src="asset/moon.png">  
+         </div>
+      </section>
+      <section class="wrapper img-text" id="box">
         <div class="inner-wrapper">
-           
-        <div class="left content">
-            <img src="img/img/img-txt-1.png">
-        </div>
-                <div class="right content">
-                        <h2>Gutes Bier beginnt mit den besten Zutaten</h2>
-                    <p>Gutes Bier braucht beste Zutaten – und die finden wir direkt vor unserer Haustür. <mark class="red">Seit 1888 </mark>stehen wir für Regionalität und Qualität: Hopfen aus<mark class="red"> Tettnang</mark>, frisches Wasser aus dem <mark class="red">Bodensee</mark> und Malz von <mark class="red">heimischen Ackerböden</mark> in Baden-Württemberg.</p>
-                    <p>Doch es steckt noch mehr dahinter: Brauhandwerk mit Leidenschaft, Erfahrung und einer ganz besonderen Note. Jedes unserer Biere wird mit Sorgfalt und handwerklichem Können gebraut – von traditionsreichen Klassikern bis hin zu besonderen Spezialitäten. Dabei setzen wir konsequent auf<mark class="red"> Nachhaltigkeit</mark>, moderne Brauverfahren und den<mark class="red"> einzigartigen Geschmack</mark>, der Dinkelacker Biere so besonders macht.</p>
-                    <div class="cta button">
-                        <a href="#rohstoffe">mehr erfahren</a>
-                    </div>
-                </div> 
-    </div>
-        </div>
-</div>
-    <div class="wrapper rohstoffe" id="rohstoffe">
-        <div class="inner-wrapper">
-            <h2>Rohstoffe aus unserer Heimat</h2>
-            <div class="one-third one">
-                <img src="img/weizen.svg">
-                <h3>Gerste</h3>
-                <p>Unser Malz stammt von heimischen Ackerböden in <mark>Baden-Württemberg.</mark> Die hohe Qualität sorgt für den einzigartigen Geschmack und die perfekte Basis unseres Bieres.
-
-                </p>
-            </div>
-
-              <div class="one-third two">
-                <img src="img/wasser.svg">
-                <h3>Wasser</h3>
-                <p>Frisches Wasser aus der Quelle des<mark> Bodensees</mark> ist essenziell für unsere Braukunst. Es verleiht unseren Bieren Reinheit und einen unverwechselbaren Charakter.
-
-                </p>
-            </div>
-
-
-              <div class="one-third third">
-                <img src="img/hopfen.svg">
-                <h3>Hopfen</h3>
-                <p>Wir verwenden Hopfen von sonnenverwöhnten Feldern in<mark> Tettnang.</mark> Er sorgt für feine Aromen, ausgewogene Bitterkeit und die besondere Note unserer Biere</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="wrapper ig" id="ig">
-        <div class="top-wrapper">
-            <div class="heading">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><radialGradient id="bg-ig" cx="32" cy="32.5" r="31.259" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#efdcb1"/><stop offset="0" stop-color="#f2e0bb"/><stop offset=".011" stop-color="#f2e0bc"/><stop offset=".362" stop-color="#f9edd2"/><stop offset=".699" stop-color="#fef4df"/><stop offset="1" stop-color="#fff7e4"/></radialGradient><radialGradient id="TGwjmZMm2W~B4yrgup6jdb" cx="18.51" cy="66.293" r="69.648" gradientTransform="matrix(.6435 -.7654 .5056 .4251 -26.92 52.282)" gradientUnits="userSpaceOnUse"><stop offset=".073" stop-color="#eacc7b"/><stop offset=".184" stop-color="#ecaa59"/><stop offset=".307" stop-color="#ef802e"/><stop offset=".358" stop-color="#ef6d3a"/><stop offset=".46" stop-color="#f04b50"/><stop offset=".516" stop-color="#f03e58"/><stop offset=".689" stop-color="#db359e"/><stop offset=".724" stop-color="#ce37a4"/><stop offset=".789" stop-color="#ac3cb4"/><stop offset=".877" stop-color="#7544cf"/><stop offset=".98" stop-color="#2b4ff2"/></radialGradient><path fill="url(#TGwjmZMm2W~B4yrgup6jdb)" d="M45,57H19c-5.5,0-10-4.5-10-10V21c0-5.5,4.5-10,10-10h26c5.5,0,10,4.5,10,10v26C55,52.5,50.5,57,45,57z"/><path fill="#fff" d="M32,20c4.6,0,5.1,0,6.9,0.1c1.7,0.1,2.6,0.4,3.2,0.6c0.8,0.3,1.4,0.7,2,1.3c0.6,0.6,1,1.2,1.3,2 c0.2,0.6,0.5,1.5,0.6,3.2C46,28.9,46,29.4,46,34s0,5.1-0.1,6.9c-0.1,1.7-0.4,2.6-0.6,3.2c-0.3,0.8-0.7,1.4-1.3,2 c-0.6,0.6-1.2,1-2,1.3c-0.6,0.2-1.5,0.5-3.2,0.6C37.1,48,36.6,48,32,48s-5.1,0-6.9-0.1c-1.7-0.1-2.6-0.4-3.2-0.6 c-0.8-0.3-1.4-0.7-2-1.3c-0.6-0.6-1-1.2-1.3-2c-0.2-0.6-0.5-1.5-0.6-3.2C18,39.1,18,38.6,18,34s0-5.1,0.1-6.9 c0.1-1.7,0.4-2.6,0.6-3.2c0.3-0.8,0.7-1.4,1.3-2c0.6-0.6,1.2-1,2-1.3c0.6-0.2,1.5-0.5,3.2-0.6C26.9,20,27.4,20,32,20 M32,17 c-4.6,0-5.2,0-7,0.1c-1.8,0.1-3,0.4-4.1,0.8c-1.1,0.4-2.1,1-3,2s-1.5,1.9-2,3c-0.4,1.1-0.7,2.3-0.8,4.1C15,28.8,15,29.4,15,34 s0,5.2,0.1,7c0.1,1.8,0.4,3,0.8,4.1c0.4,1.1,1,2.1,2,3c0.9,0.9,1.9,1.5,3,2c1.1,0.4,2.3,0.7,4.1,0.8c1.8,0.1,2.4,0.1,7,0.1 s5.2,0,7-0.1c1.8-0.1,3-0.4,4.1-0.8c1.1-0.4,2.1-1,3-2c0.9-0.9,1.5-1.9,2-3c0.4-1.1,0.7-2.3,0.8-4.1c0.1-1.8,0.1-2.4,0.1-7 s0-5.2-0.1-7c-0.1-1.8-0.4-3-0.8-4.1c-0.4-1.1-1-2.1-2-3s-1.9-1.5-3-2c-1.1-0.4-2.3-0.7-4.1-0.8C37.2,17,36.6,17,32,17L32,17z"/><path fill="#fff" d="M32,25c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S37,25,32,25z M32,40c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S35.3,40,32,40 z"/><circle cx="41" cy="25" r="2" fill="#fff"/></svg>
-                <h2>User Instagram</h2>
-
-            </div>
-           
-            <div class="insta">
-                <div class="post ig-zahl">
-                    <p>193</p>
-                    <p>Posts</p>
-                </div>
-
-                <div class="followers ig-zahl">
-                    <p>4.813</p>
-                    <p>Followers</p>
-                </div>
-
-                <div class="following ig-zahl">
-                    <p>105</p>
-                    <p>Following</p>
-                </div>
-                
-               
-            </div>
-        </div>
-       
-        <div class="slider slider-ig">
-            <div class="track">
-
-                <div class="slide">
-                    <img src="img/ig/1080x1350-Von-oben-Weihnachtsgold.jpg">
-                </div>
-
-                <div class="slide">
-                    <img src="img/ig/1350x1080px-Rock am Ring Verlosung.jpg">
-                </div>
-
-                 
-
-                <div class="slide">
-                    <img src="img/ig/1350x1080-wg-flaschen-unscharf.jpg">
-                    </div>
-            
-                <div class="slide">
-                        <img src="img/ig/1350x1080-nachhaltigkeit-1.jpg">
-                </div>
-
-                 <div class="slide">
-                    <img src="img/ig/1350x1080-brauwerkstatt-1.jpg">
-                </div>
-
-                <div class="slide">
-                    <img src="img/ig/1350x1080-teamwork-1.jpg">
-                </div>
-
-                <div class="slide">
-                    <img src="img/ig/1350x1080-kalthopfen-1.jpg">
-                </div>
-
-                <div class="slide">
-                    <img src="img/ig/1350x1080-wg-flaschen-unscharf.jpg">
-                </div>
-
-
-
-
-             </div>
-             <div class="dots" id="dots"></div>
-    
-    </div>
-
-</div>
-</div>
-
-    <div class="wrapper" id="faq">
-        <div class="inner-wrapper">
-           <h2>FAQ</h2>
-           <div class="akordeon">
-              <div class="akordeon-tab">
-                 <div class="akkordeon-title">
-                    <div class="icon">
-                       <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
-                       </svg>
-                    </div>
-                    <h5>Was ist das Besondere an eurem Weihnachtsbier?</h5>
-                 </div>
-                 <p>Unser Weihnachtsbier<mark> Weihnachtsgold</mark> ist ein festliches Spezialbier mit einer goldenen Farbe, vollmundigem Malzaroma und feinen Hopfennoten. Es wird nach traditionellen Brauverfahren mit besten Zutaten gebraut und passt perfekt zur winterlichen Jahreszeit.</p>
+           <article class="left content">
+              <h2>Genussvolle Weihnachten mit unserem Weihnachtsbier-Set!</h2>
+              <p>Lass dich in der Weihnachtszeit von unserer exklusiven <mark>Weihnachtsgold-Geschenkbox</mark> zu besonderen Genussmomenten verführen.</p>
+              <p>In der limitierten Box erwarten dich zwei Flaschen unseres brandneuen <mark>Weihnachtsgold</mark> – ein edles, goldfarbenes Festbier mit Aromen von Steinobst und Malzbonbon, harmonisch ausbalanciert und vollmundig im Geschmack. Dazu gibt es ein stilvolles Stiefel-Glas für den perfekten Festtags-Look.</p>
+              <p>Ob als Geschenk oder für dich selbst – dieses Set verleiht jeder Feier eine festliche Note.</p>
+              <p>Unsere limitierte <mark>Weihnachtsgold-Geschenkbox</mark> kannst du mit etwas Glück auch in unserem großen Adventskalender-Gewinnspiel ergattern! Öffne täglich ein Türchen und gewinne tolle Preise – von einer Heißluftballonfahrt bis hin zu Tickets für Rock am Ring!</p>
+              <div class="cta button">
+                 <a href="#banner" aria-label="Zum Adventskalender">Jetzt mitmachen</a>
               </div>
-              <div class="akordeon-tab">
-                 <div class="akkordeon-title">
-                    <div class="icon">
-                       <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
-                       </svg>
-                    </div>
-                    <h5>Kann ich die Weihnachtsbier-Box auch verschenken?</h5>
-                 </div>
-                 <p>Ja, unsere<mark> Weihnachtsbier-Box </mark>ist das ideale Geschenk für Bierliebhaber! Sie enthält zwei Flaschen Weihnachtsgold und ein exklusives <mark>Stiefel-Glas</mark> – perfekt für eine festliche Überraschung.</p>
-              </div>
-              <div class="akordeon-tab">
-                 <div class="akkordeon-title">
-                    <div class="icon">
-                       <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
-                       </svg>
-                    </div>
-                    <h5>Wo kann ich die Weihnachtsbier-Box kaufen?</h5>
-                 </div>
-                 <p>Die Box ist in unserem Online-Shop sowie bei ausgewählten Handelspartnern erhältlich. Schnell sein lohnt sich – sie ist nur für kurze Zeit verfügbar!</p>
-              </div>
-              <div class="akordeon-tab">
-                 <div class="akkordeon-title">
-                    <div class="icon">
-                       <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
-                       </svg>
-                    </div>
-                    <h5>Gibt es das Weihnachtsbier nur in der Box?</h5>
-                 </div>
-                 <p>Nein,<mark> Weihnachtsgold</mark> ist auch einzeln erhältlich. Schau in unserem Shop vorbei, um dir dein Festbier zu sichern!</p>
-              </div>
-              <div class="akordeon-tab">
-                <div class="akkordeon-title">
-                   <div class="icon">
-                      <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
-                      </svg>
-                   </div>
-                   <h5>Wie kann ich am Adventskalender-Gewinnspiel teilnehmen?</h5>
-                </div>
-                <p>Ganz einfach! Besuche täglich unsere Website, öffne das Türchen des Tages und sichere dir die Chance auf<mark> tolle Preise</mark> – darunter auch unsere<mark> Weihnachtsbier-Box!</mark></p>
-             </div>
-           </div>
-           <div>
-           </div>
+           </article>
+           <figure class="right content">
+              <img src="img/img/Bier-mit-stiefel.jpg" alt="Bierflasche mit Stiefel-Glas">
+           </figure>
         </div>
-    </div>
-        <div class="wrapper" id="kontakt">
-        <div class="inner-wrapper">
-           <div class="left content">
-              <img src="img/map.png">
-           </div>
-           <div class="right content">
-              <h2>Jetzt Kontakt aufnehmen</h2>
-              <form action="submit_form.php" method="POST</div>">
-                 <div class="row-50">
-                    <label class="screen-reader" for="vorname">Vorname:</label>
-                    <input type="text" id="vorname" placeholder="Voranme" name="vorname" required>
-                 </div>
-                 <div class="row-50">
-                    <label class="screen-reader" for="nachname">Nachname:</label>
-                    <input type="text" placeholder="Nachname" id="nachname" name="nachname" required>
-                 </div>
-                 <div class="row">
-                    <label class="screen-reader" for="email">E-Mail:</label>
-                    <input type="email" placeholder="E-Mail" id="email" name="email" required>
-                 </div>
-                 <div class="row">
-                    <label class="screen-reader" for="betreff">Betreff:</label>
-                    <input type="text" placeholder="Betreff" id="betreff" name="betreff" required>
-                 </div>
-                 <div class="row">
-                    <label class="screen-reader" for="nachricht">Nachricht:</label>
-                    <textarea id="nachricht" placeholder="Deine Nachricht..." name="nachricht" rows="4" cols="50" required></textarea>
-                    <input type="submit" value="Absenden">
-              </form>
-              </div>     
-           </div>
-        </div>
-</div>
-        <footer>
+     </section>
+     
+     
+      <div class="wrapper slider slider-wm" id="banner">
+         <div class="track">
+            <div class="slide">
+               <img src="asset/weihnachtsmann.svg">
+            </div>
+            <div class="slide">
+               <img src="asset/weihnachtsmann.svg">
+            </div>
+            <div class="slide">
+               <img src="asset/weihnachtsmann.svg">
+            </div>
+            <div class="slide">
+               <img src="asset/weihnachtsmann.svg">
+            </div>
+            <div class="slide">
+               <img src="asset/weihnachtsmann.svg">
+            </div>
+            <div class="slide">
+               <img src="asset/weihnachtsmann.svg">
+            </div>
+         </div>
+      </div>
+      <section class="wrapper" id="kalender">
+         <div class="inner-wrapper-a">
+            <div class="door door-1" onclick="openPopup(1)">
+               <div class="string"></div>
+               <img src="asset/baum-gelb-1.svg">
+               <p>1</p>
+            </div>
+            <div class="door door-2" onclick="openPopup(2)">
+               <div class="string"></div>
+               <img src="asset/baum-rot-1.svg">
+               <p>2</p>
+            </div>
+            <div class="door door-3" onclick="openPopup(3)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>3</p>
+            </div>
+            <div class="door door-4" onclick="openPopup(4)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-2.svg">
+               <p>4</p>
+            </div>
+            <div class="door door-5" onclick="openPopup(5)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>5</p>
+            </div>
+            <div class="door door-6" onclick="openPopup(6)">
+               <div class="string"></div>
+               <img src="asset/baum-gelb-1.svg">
+               <p>6</p>
+            </div>
+            <div class="door door-7" onclick="openPopup(7)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>7</p>
+            </div>
+            <div class="door door-8" onclick="openPopup(8)">
+               <div class="string"></div>
+               <img src="asset/kugel-gelb-2.svg">
+               <p>8</p>
+            </div>
+            <div class="door door-9" onclick="openPopup(9)">
+               <div class="string"></div>
+               <img src="asset/kugel-rot-1.svg">
+               <p>9</p>
+            </div>
+            <div class="door door-10" onclick="openPopup(10)">
+               <div class="string"></div>
+               <img src="asset/kugel-gelb-2.svg">
+               <p>10</p>
+            </div>
+            <div class="door door-11" onclick="openPopup(11)">
+               <div class="string"></div>
+               <img src="asset/baum-rot-1.svg">
+               <p>11</p>
+            </div>
+            <div class="door door-12" onclick="openPopup(12)">
+               <div class="string"></div>
+               <img src="asset/baum-rot-1.svg">
+               <p>12</p>
+            </div>
+            <div class="door door-13" onclick="openPopup(13)">
+               <div class="string"></div>
+               <img src="asset/baum-gelb-1.svg">
+               <p>13</p>
+            </div>
+            <div class="door door-14" onclick="openPopup(14)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-2.svg">
+               <p>14</p>
+            </div>
+            <div class="door door-15" onclick="openPopup(15)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>15</p>
+            </div>
+            <div class="door door-16" onclick="openPopup(16)">
+               <div class="string"></div>
+               <img src="asset/bier-gleb-2.svg">
+               <p>16</p>
+            </div>
+            <div class="door door-17" onclick="openPopup(17)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>17</p>
+            </div>
+            <div class="door door-18" onclick="openPopup(18)">
+               <div class="string"></div>
+               <img src="asset/bier-gleb-2.svg">
+               <p>18</p>
+            </div>
+            <div class="door door-19" onclick="openPopup(19)">
+               <div class="string"></div>
+               <img src="asset/kugel-rot-2.svg">
+               <p>19</p>
+            </div>
+            <div class="door door-20" onclick="openPopup(20)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>20</p>
+            </div>
+            <div class="door door-21" onclick="openPopup(21)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-2.svg">
+               <p>21</p>
+            </div>
+            <div class="door door-22" onclick="openPopup(22)">
+               <div class="string"></div>
+               <img src="asset/bier-gleb-2.svg">
+               <p>22</p>
+            </div>
+            <div class="door door-23" onclick="openPopup(23)">
+               <div class="string"></div>
+               <img src="asset/baum-rot-1.svg">
+               <p>23</p>
+            </div>
+            <div class="door door-24" onclick="openPopup(24)">
+               <div class="string"></div>
+               <img src="asset/bier-rot-1.svg">
+               <p>24</p>
+            </div>
+            <div class="door door-layer door-1" onclick="openPopup(1)">
+               <img src="asset/baum-gelb-1.svg">
+               <p>1</p>
+            </div>
+            <div class="door door-layer door-2" onclick="openPopup(2)">
+               <img src="asset/baum-rot-1.svg">
+               <p>11</p>
+            </div>
+            <div class="door door-layer door-3" onclick="openPopup(3)">
+               <img src="asset/bier-rot-1.svg">
+               <p>3</p>
+            </div>
+            <div class="door door-layer door-4" onclick="openPopup(4)">
+               <img src="asset/bier-rot-2.svg">
+               <p>4</p>
+            </div>
+            <div class="door door-layer door-5" onclick="openPopup(5)">
+               <img src="asset/bier-rot-1.svg">
+               <p>5</p>
+            </div>
+            <div class="door door-layer door-6" onclick="openPopup(6)">
+               <img src="asset/baum-gelb-1.svg">
+               <p>6</p>
+            </div>
+            <div class="door door-layer door-7" onclick="openPopup(7)">
+               <img src="asset/bier-rot-1.svg">
+               <p>7</p>
+            </div>
+            <div class="door door-layer door-8" onclick="openPopup(8)">
+               <img src="asset/kugel-gelb-2.svg">
+               <p>8</p>
+            </div>
+            <div class="door door-layer door-9" onclick="openPopup(9)">
+               <img src="asset/kugel-rot-1.svg">
+               <p>9</p>
+            </div>
+            <div class="door door-layer door-10" onclick="openPopup(10)">
+               <img src="asset/kugel-gelb-2.svg">
+               <p>10</p>
+            </div>
+            <div class="door door-layer door-11" onclick="openPopup(11)">
+               <img src="asset/baum-rot-1.svg">
+               <p>2</p>
+            </div>
+            <div class="door door-layer door-12" onclick="openPopup(12)">
+               <img src="asset/baum-rot-1.svg">
+               <p>12</p>
+            </div>
+            <div class="door door-layer door-13" onclick="openPopup(13)">
+               <img src="asset/baum-gelb-1.svg">
+               <p>13</p>
+            </div>
+            <div class="door door-layer door-14" onclick="openPopup(14)">
+               <img src="asset/bier-rot-2.svg">
+               <p>14</p>
+            </div>
+            <div class="door door-layer door-15" onclick="openPopup(15)">
+               <img src="asset/bier-rot-1.svg">
+               <p>15</p>
+            </div>
+            <div class="door door-layer door-16" onclick="openPopup(16)">
+               <img src="asset/bier-gleb-2.svg">
+               <p>16</p>
+            </div>
+            <div class="door door-layer door-17" onclick="openPopup(17)">
+               <img src="asset/bier-rot-1.svg">
+               <p>17</p>
+            </div>
+            <div class="door door-layer door-18" onclick="openPopup(18)">
+               <img src="asset/bier-gleb-2.svg">
+               <p>18</p>
+            </div>
+            <div class="door door-layer door-19" onclick="openPopup(19)">
+               <img src="asset/kugel-rot-2.svg">
+               <p>19</p>
+            </div>
+            <div class="door door-layer door-20" onclick="openPopup(20)">
+               <img src="asset/bier-rot-1.svg">
+               <p>20</p>
+            </div>
+            <div class="door door-layer door-21" onclick="openPopup(21)">
+               <img src="asset/bier-rot-2.svg">
+               <p>21</p>
+            </div>
+            <div class="door door-layer door-22" onclick="openPopup(22)">
+               <img src="asset/bier-gleb-2.svg">
+               <p>22</p>
+            </div>
+            <div class="door door-layer door-23" onclick="openPopup(23)">
+               <img src="asset/baum-rot-1.svg">
+               <p>23</p>
+            </div>
+            <div class="door door-layer door-24" onclick="openPopup(24)">
+               <img src="asset/bier-rot-1.svg">
+               <p>24</p>
+            </div>
+         </div>
+      </section>
+      <div id="popup-door" class="popup-door">
+         <div class="popup-door-content">
+            <span class="close" onclick="closePopup(1)">&times;</span>
+            <img id="popup-door-img" src="" alt="Bierflasche">
+            <div class="content-inner">
+               <h4>Dein Gewinn-Code:</h4>
+               <p id="popup-door-text"></p>
+               <input id="popup-door-input1" type="text" placeholder="Name">
+               <input id="popup-door-input2" type="email" placeholder="E-mail">
+               <input type="submit" value="Jezt mitmachen" class="red">
+               <input type="submit" value="Schließen" class="close">
+            </div>
+         </div>
+      </div>
+      <div class="parallax-2">
+         <img src="asset/stugges.png" class="bg-element">
+         <section class="wrapper img-text img-text-2">
+            <div class="outer-wrapper">
+               <div class="inner-wrapper">
+                  <figure class="left content">
+                     <img src="img/img/img-txt-1.png" alt="Hopfenpflanzen wachsen an hohen Drähten in der Sonne, mit strahlendem Sonnenlicht, das durch die Blätter scheint.">
+                  </figure>
+                  <article class="right content">
+                     <h2>Gutes Bier beginnt mit den besten Zutaten</h2>
+                     <p>Gutes Bier braucht beste Zutaten – und die finden wir direkt vor unserer Haustür. 
+                        <mark class="red">Seit 1888</mark> stehen wir für Regionalität und Qualität: Hopfen aus 
+                        <mark class="red">Tettnang</mark>, frisches Wasser aus dem <mark class="red">Bodensee</mark> 
+                        und Malz von <mark class="red">heimischen Ackerböden</mark> in Baden-Württemberg.
+                     </p>
+                     <p>Doch es steckt noch mehr dahinter: Brauhandwerk mit Leidenschaft, Erfahrung und einer ganz besonderen Note. 
+                        Jedes unserer Biere wird mit Sorgfalt und handwerklichem Können gebraut – von traditionsreichen Klassikern 
+                        bis hin zu besonderen Spezialitäten. Dabei setzen wir konsequent auf <mark class="red">Nachhaltigkeit</mark>, 
+                        moderne Brauverfahren und den <mark class="red">einzigartigen Geschmack</mark>, der Dinkelacker Biere so besonders macht.
+                     </p>
+                     <div class="cta button">
+                        <a href="#rohstoffe" aria-label="Zu den Rohstoffen">mehr erfahren</a>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section class="wrapper rohstoffe" id="rohstoffe" aria-label="Zu den Rohstoffen">
             <div class="inner-wrapper">
-                <div>
-                    <span>Copyright: 2025</span>
-                </div>
-                <div class="legal">
-                    <a href="#">Datenschutz</a>
-                    <a href="#">Impressum</a>
-                </div>
+               <h2>Rohstoffe aus unserer Heimat</h2>
+               <article class="one-third one">
+                  <figure>
+                     <img src="img/weizen.svg" alt="Symbol für Gerste">
+                     <figcaption><h3>Gerste</h3></figcaption>
+                  </figure>
+                  <p>Unser Malz stammt von heimischen Ackerböden in <mark>Baden-Württemberg</mark>. Die hohe Qualität sorgt für den einzigartigen Geschmack und die perfekte Basis unseres Bieres.</p>
+               </article>
+               <article class="one-third two">
+                  <figure>
+                     <img src="img/wasser.svg" alt="Symbol für Wasser">
+                     <figcaption><h3>Wasser</h3></figcaption>
+                  </figure>
+                  <p>Frisches Wasser aus der Quelle des <mark>Bodensees</mark> ist essenziell für unsere Braukunst. Es verleiht unseren Bieren Reinheit und einen unverwechselbaren Charakter.</p>
+               </article>
+               <article class="one-third third">
+                  <figure>
+                     <img src="img/hopfen.svg" alt="Symbol für Hopfen">
+                     <figcaption><h3>Hopfen</h3></figcaption>
+                  </figure>
+                  <p>Wir verwenden Hopfen von sonnenverwöhnten Feldern in <mark>Tettnang</mark>. Er sorgt für feine Aromen, ausgewogene Bitterkeit und die besondere Note unserer Biere.</p>
+               </article>
             </div>
-        </footer>
-</div>
+         </section>
+         
+         <section class="wrapper ig" id="ig">
+            <div class="top-wrapper">
+               <div class="heading">
+                  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px">
+                     <radialGradient id="bg-ig" cx="32" cy="32.5" r="31.259" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#efdcb1"/>
+                        <stop offset="0" stop-color="#f2e0bb"/>
+                        <stop offset=".011" stop-color="#f2e0bc"/>
+                        <stop offset=".362" stop-color="#f9edd2"/>
+                        <stop offset=".699" stop-color="#fef4df"/>
+                        <stop offset="1" stop-color="#fff7e4"/>
+                     </radialGradient>
+                     <radialGradient id="TGwjmZMm2W~B4yrgup6jdb" cx="18.51" cy="66.293" r="69.648" gradientTransform="matrix(.6435 -.7654 .5056 .4251 -26.92 52.282)" gradientUnits="userSpaceOnUse">
+                        <stop offset=".073" stop-color="#eacc7b"/>
+                        <stop offset=".184" stop-color="#ecaa59"/>
+                        <stop offset=".307" stop-color="#ef802e"/>
+                        <stop offset=".358" stop-color="#ef6d3a"/>
+                        <stop offset=".46" stop-color="#f04b50"/>
+                        <stop offset=".516" stop-color="#f03e58"/>
+                        <stop offset=".689" stop-color="#db359e"/>
+                        <stop offset=".724" stop-color="#ce37a4"/>
+                        <stop offset=".789" stop-color="#ac3cb4"/>
+                        <stop offset=".877" stop-color="#7544cf"/>
+                        <stop offset=".98" stop-color="#2b4ff2"/>
+                     </radialGradient>
+                     <path fill="url(#TGwjmZMm2W~B4yrgup6jdb)" d="M45,57H19c-5.5,0-10-4.5-10-10V21c0-5.5,4.5-10,10-10h26c5.5,0,10,4.5,10,10v26C55,52.5,50.5,57,45,57z"/>
+                     <path fill="#fff" d="M32,20c4.6,0,5.1,0,6.9,0.1c1.7,0.1,2.6,0.4,3.2,0.6c0.8,0.3,1.4,0.7,2,1.3c0.6,0.6,1,1.2,1.3,2 c0.2,0.6,0.5,1.5,0.6,3.2C46,28.9,46,29.4,46,34s0,5.1-0.1,6.9c-0.1,1.7-0.4,2.6-0.6,3.2c-0.3,0.8-0.7,1.4-1.3,2 c-0.6,0.6-1.2,1-2,1.3c-0.6,0.2-1.5,0.5-3.2,0.6C37.1,48,36.6,48,32,48s-5.1,0-6.9-0.1c-1.7-0.1-2.6-0.4-3.2-0.6 c-0.8-0.3-1.4-0.7-2-1.3c-0.6-0.6-1-1.2-1.3-2c-0.2-0.6-0.5-1.5-0.6-3.2C18,39.1,18,38.6,18,34s0-5.1,0.1-6.9 c0.1-1.7,0.4-2.6,0.6-3.2c0.3-0.8,0.7-1.4,1.3-2c0.6-0.6,1.2-1,2-1.3c0.6-0.2,1.5-0.5,3.2-0.6C26.9,20,27.4,20,32,20 M32,17 c-4.6,0-5.2,0-7,0.1c-1.8,0.1-3,0.4-4.1,0.8c-1.1,0.4-2.1,1-3,2s-1.5,1.9-2,3c-0.4,1.1-0.7,2.3-0.8,4.1C15,28.8,15,29.4,15,34 s0,5.2,0.1,7c0.1,1.8,0.4,3,0.8,4.1c0.4,1.1,1,2.1,2,3c0.9,0.9,1.9,1.5,3,2c1.1,0.4,2.3,0.7,4.1,0.8c1.8,0.1,2.4,0.1,7,0.1 s5.2,0,7-0.1c1.8-0.1,3-0.4,4.1-0.8c1.1-0.4,2.1-1,3-2c0.9-0.9,1.5-1.9,2-3c0.4-1.1,0.7-2.3,0.8-4.1c0.1-1.8,0.1-2.4,0.1-7 s0-5.2-0.1-7c-0.1-1.8-0.4-3-0.8-4.1c-0.4-1.1-1-2.1-2-3s-1.9-1.5-3-2c-1.1-0.4-2.3-0.7-4.1-0.8C37.2,17,36.6,17,32,17L32,17z"/>
+                     <path fill="#fff" d="M32,25c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S37,25,32,25z M32,40c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S35.3,40,32,40 z"/>
+                     <circle cx="41" cy="25" r="2" fill="#fff"/>
+                  </svg>
+                  <h2>User Instagram</h2>
+               </div>
+               <div class="insta">
+                  <div class="post ig-zahl">
+                     <p>193</p>
+                     <p>Posts</p>
+                  </div>
+                  <div class="followers ig-zahl">
+                     <p>4.813</p>
+                     <p>Followers</p>
+                  </div>
+                  <div class="following ig-zahl">
+                     <p>105</p>
+                     <p>Following</p>
+                  </div>
+               </div>
+            </div>
+            <div class="slider slider-ig">
+               <div class="track">
+                  <div class="slide">
+                     <img src="img/ig/1080x1350-Von-oben-Weihnachtsgold.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080px-Rock am Ring Verlosung.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080-wg-flaschen-unscharf.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080-nachhaltigkeit-1.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080-brauwerkstatt-1.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080-teamwork-1.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080-kalthopfen-1.jpg">
+                  </div>
+                  <div class="slide">
+                     <img src="img/ig/1350x1080-wg-flaschen-unscharf.jpg">
+                  </div>
+               </div>
+               <div class="dots" id="dots"></div>
+            </div>
+         </section>
+      </div>
+      <section class="wrapper" id="faq">
+         <div class="inner-wrapper">
+            <h2>FAQ</h2>
+            <div class="akordeon">
+               <div class="akordeon-tab">
+                  <div class="akkordeon-title">
+                     <div class="icon">
+                        <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
+                        </svg>
+                     </div>
+                     <h5>Was ist das Besondere an eurem Weihnachtsbier?</h5>
+                  </div>
+                  <p>Unser Weihnachtsbier<mark> Weihnachtsgold</mark> ist ein festliches Spezialbier mit einer goldenen Farbe, vollmundigem Malzaroma und feinen Hopfennoten. Es wird nach traditionellen Brauverfahren mit besten Zutaten gebraut und passt perfekt zur winterlichen Jahreszeit.</p>
+               </div>
+               <div class="akordeon-tab">
+                  <div class="akkordeon-title">
+                     <div class="icon">
+                        <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
+                        </svg>
+                     </div>
+                     <h5>Kann ich die Weihnachtsbier-Box auch verschenken?</h5>
+                  </div>
+                  <p>Ja, unsere<mark> Weihnachtsbier-Box </mark>ist das ideale Geschenk für Bierliebhaber! Sie enthält zwei Flaschen Weihnachtsgold und ein exklusives <mark>Stiefel-Glas</mark> – perfekt für eine festliche Überraschung.</p>
+               </div>
+               <div class="akordeon-tab">
+                  <div class="akkordeon-title">
+                     <div class="icon">
+                        <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
+                        </svg>
+                     </div>
+                     <h5>Wo kann ich die Weihnachtsbier-Box kaufen?</h5>
+                  </div>
+                  <p>Die Box ist in unserem Online-Shop sowie bei ausgewählten Handelspartnern erhältlich. Schnell sein lohnt sich – sie ist nur für kurze Zeit verfügbar!</p>
+               </div>
+               <div class="akordeon-tab">
+                  <div class="akkordeon-title">
+                     <div class="icon">
+                        <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
+                        </svg>
+                     </div>
+                     <h5>Gibt es das Weihnachtsbier nur in der Box?</h5>
+                  </div>
+                  <p>Nein,<mark> Weihnachtsgold</mark> ist auch einzeln erhältlich. Schau in unserem Shop vorbei, um dir dein Festbier zu sichern!</p>
+               </div>
+               <div class="akordeon-tab">
+                  <div class="akkordeon-title">
+                     <div class="icon">
+                        <svg width="37" height="22" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.8389 1.43651C35.0562 0.645585 33.7784 0.645585 32.9957 1.43651L20.1508 14.4163C19.3681 15.2072 18.0904 15.2072 17.3077 14.4163L4.46279 1.4365C3.68009 0.645583 2.40233 0.645581 1.61963 1.4365L1.39173 1.6668C0.620497 2.44612 0.620496 3.70109 1.39172 4.48042L17.3077 20.5635C18.0904 21.3544 19.3681 21.3544 20.1508 20.5635L36.0668 4.48042C36.838 3.70109 36.838 2.44612 36.0668 1.6668L35.8389 1.43651Z" fill="black"/>
+                        </svg>
+                     </div>
+                     <h5>Wie kann ich am Adventskalender-Gewinnspiel teilnehmen?</h5>
+                  </div>
+                  <p>Ganz einfach! Besuche täglich unsere Website, öffne das Türchen des Tages und sichere dir die Chance auf<mark> tolle Preise</mark> – darunter auch unsere<mark> Weihnachtsbier-Box!</mark></p>
+               </div>
+            </div>
+            <div>
+            </div>
+         </div>
+      </section>
+      <section class="wrapper" id="kontakt">
+         <div class="inner-wrapper">
+            <div class="left content">
+               <img src="img/map.png">
+            </div>
+            <div class="right content">
+               <h2>Jetzt Kontakt aufnehmen</h2>
+               <form action="submit_form.php" method="POST">
+                <fieldset>
+                   <legend>Kontaktiere uns</legend>
+                   
+                   <div class="row-50">
+                      <label class="screen-reader" for="vorname">Vorname:</label>
+                      <input type="text" id="vorname" placeholder="Vorname" name="vorname" required>
+                   </div>
+             
+                   <div class="row-50">
+                      <label class="screen-reader" for="nachname">Nachname:</label>
+                      <input type="text" id="nachname" placeholder="Nachname" name="nachname" required>
+                   </div>
+             
+                   <div class="row">
+                      <label class="screen-reader" for="email">E-Mail:</label>
+                      <input type="email" id="email" placeholder="E-Mail" name="email" required>
+                   </div>
+             
+                   <div class="row">
+                      <label class="screen-reader" for="betreff">Betreff:</label>
+                      <input type="text" id="betreff" placeholder="Betreff" name="betreff" required>
+                   </div>
+             
+                   <div class="row">
+                      <label class="screen-reader" for="nachricht">Nachricht:</label>
+                      <textarea id="nachricht" name="nachricht" placeholder="Deine Nachricht..." rows="4" cols="50" required></textarea>
+                   </div>
+             
+                   <div class="row">
+                      <input type="submit" value="Absenden" aria-label="Kontaktformular absenden">
+                   </div>
+                   
+                </fieldset>
+             </form>
+             
+               </div>     
+            </div>
+      </section>
+      </div>
 
-</body>
-
-
-
-
+    </main>
+      <footer>
+         <div class="inner-wrapper">
+            <div>
+               <span>Copyright: 2025</span>
+            </div>
+            <div class="legal">
+               <a href="#">Datenschutz</a>
+               <a href="#">Impressum</a>
+            </div>
+         </div>
+      </footer>
+      </div>
+   </body>
 </html>
- 

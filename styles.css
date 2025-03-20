@@ -18,7 +18,12 @@ body {
 
 }
 
-
+figure {
+    margin: 0;
+}
+legend {
+    display: none;
+}
 @font-face {
     font-family: "span", serif;
     font-weight: 400;
@@ -482,9 +487,7 @@ img.bg-element {
 
 
 
-div#kalender {
-    height: 100vh;
-}
+
 
 #kalender svg {
     max-width: 70px;
@@ -800,7 +803,7 @@ div#kalender {
     margin-bottom: 40px;
 }
 
-div#faq {
+#faq {
     margin-block: 75px;
 }
 
@@ -809,14 +812,14 @@ div#faq {
 
 /* IG */
 
-div#ig {
+#ig {
     background-color: #BE1D28;
     padding-top: 75px;
     overflow: hidden;
 
 }
 
-div#ig h2 {
+#ig h2 {
     color: #fff;
     margin-bottom: 30px;
 }
@@ -928,7 +931,7 @@ div#ig h2 {
     padding-bottom: 20px;
 }
 
-div#ig .slide .icon {
+#ig .slide .icon {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -1049,7 +1052,7 @@ div#ig .slide .icon {
    
 }
 
-div#kontakt {
+#kontakt {
     background-color: #BE1D28;
 }
 #kontakt .inner-wrapper {
@@ -1075,13 +1078,18 @@ div#kontakt {
   }
 
 
-  form {
+  form fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
-
+#kontakt input[type="submit"] {
+    margin-top: 0px;
+}
 .row-50 {
     width: calc(50% - 12.5px);
     display: flex;
@@ -1411,7 +1419,7 @@ background-color: transparent;
     margin-block: 0px;
 }
 
-div#faq {
+#faq {
     margin-block: 25px;
 }
 
@@ -1493,7 +1501,7 @@ div#faq {
     gap: 20px;
 }
 
-div#faq {
+#faq {
     margin-block: 0px;
 }
 
