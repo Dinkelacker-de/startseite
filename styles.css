@@ -776,7 +776,7 @@ img.bg-element {
 
 
 .akkordeon-title .icon svg {
-    width: 22px;
+    min-width: 22px;
 }
 
 .akordeon-tab h5 {
@@ -1538,7 +1538,10 @@ background-color: transparent;
 
 
 @media  screen and (max-width:767px) {
-
+    .akkordeon-title .icon svg {
+        max-width: 12px;
+    }
+    
     .popup-door-content img {
         width: 100%;
     }
