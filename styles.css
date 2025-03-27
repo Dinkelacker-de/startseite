@@ -1417,7 +1417,7 @@ background-color: transparent;
 
 @media  screen and (max-width:1200px) {
     .burger-menu {
-        display: flex;
+        display: flex !important;
     }
     nav {
         position: fixed;
