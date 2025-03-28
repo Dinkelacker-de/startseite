@@ -52,7 +52,7 @@ h1 {
     font-size: 54px;
     margin-top: 0px;
     margin-bottom: 15px;
-    font-family: "span", serif;
+    font-family: "Sweet Sans Pro Regular", serif !important;
     color: #D6B54C;
 }
 h2 {
